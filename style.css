@@ -1,0 +1,226 @@
+/* section1 */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+
+  }
+  
+  .navbar .logo a{
+    margin-left: 20px;
+    float: left;
+  }
+
+  .navbar .logo img{
+    width: 200px;
+  }
+
+  .navbar .navbar_menu{
+    margin-right: 20px;
+  }
+  .navbar .menu a {
+    float: right;
+    font-size: 16px;
+    color: rgb(13, 8, 8);
+    text-align: center;
+    padding: 25px 13px;
+    text-decoration: none;
+  }
+
+  .menu img{
+    height: 10px;
+    margin-left: 10px;
+  }
+
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(21, 16, 16);
+    padding: 25px 5px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown img{
+    height: 10px;
+    padding-left: 5px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* ---------------------------------------- */
+
+  /* section 2 */
+  
+.bgs2_1{
+    background-image: url("/images/bg1.jpg");
+    min-height: 700px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+  }
+
+.container{
+  position: relative;
+}
+
+  /* * {box-sizing:border-box} */
+/* Slideshow container */
+
+.pic1{
+  max-width: auto;
+  margin-top:  68px;
+  left: 13%;
+  position: absolute;
+}
+
+.pic1 img{
+  width: auto;
+  height: 550px;
+}
+
+.slideshow-container {
+  max-width: auto;
+  margin: auto;
+  right: 10%;
+  transform: translate(-0%, -114%);
+  position: absolute;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+
+}
+
+.mySlides img{
+  width: auto;
+  height: 550px; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -30px;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-right: -4px;
+  right: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  margin-left: -12px;
+  left: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot_position{
+  position: absolute;
+  top: -260%;
+  left:65%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-right: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ---------------------------------------- */
+
+  /* section 3 */
+
+.boxwhy table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .col1row1{
+    margin-bottom: 10%;
+  }
+
+  .col2row1{
+    margin-bottom: 10%;
+  }
+
+  .colline{
+    height: 180px;
+    padding: 80px 40px;
+    width: 10%;
+    opacity: 0.5;
+  }
