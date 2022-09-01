@@ -210,17 +210,140 @@
   margin-right: auto;
 }
 
-  .col1row1{
+  .boxwhy .col1row1{
     margin-bottom: 10%;
   }
 
-  .col2row1{
+  .boxwhy .col2row1{
     margin-bottom: 10%;
   }
 
-  .colline{
+  .boxwhy .colline{
     height: 180px;
     padding: 80px 40px;
     width: 10%;
     opacity: 0.5;
   }
+
+/* ---------------------------------------- */
+
+  /* section 4 */
+
+
+  .head h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    position: absolute;
+  }
+
+  .head .btn{
+    background-color: #1a0567;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 590px;
+    margin-top: 150px;
+    border-radius: 60px;
+  }
+
+  .head .btn a{
+    color: rgb(255, 255, 255);
+    margin-top: -50%;
+  }
+
+  .head .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .head .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .head .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .head .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/* ---------------------------------------- */
+
+  /* section 5 */
+
+  .news table{
+    text-align: center;
+    margin: 10%;
+  }
+  .news .col1row1{
+    margin-bottom: 20%;
+  }
+
+  .news .col2row1{
+    margin-bottom: 10%;
+  }
+
+  .news .colline{
+    height: 80px;
+    padding: 80px 40px;
+    width: 10%;
+    opacity: 0.5;
+  }
+
+  .news .btn{
+    background-color: #1a0567;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: -22px;
+    border-radius: 60px;
+  }
+
+  .news .btn a{
+    color: rgb(255, 255, 255);
+    margin-top: -50%;
+  }
+
+  .news .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .news .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .news .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .news .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
