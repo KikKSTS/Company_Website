@@ -1,0 +1,71 @@
+a{
+    color: black;
+    text-decoration:none;
+}
+
+a:hover{
+    color: blue;
+}
+h1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.6rem;
+  margin: 20px 0px 0px 0px;
+}
+h6 {
+  font-size: 0.9rem;
+  margin: 10px 0 ;
+}
+p {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+h3, h6 {
+  font-weight: 600;
+}
+h1, h3, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+.head-container {
+  margin: 10px auto 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) ;
+}
+.containers {
+  max-width: 880px;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.pool-print {
+  width: 600px;
+}
+.flex-container {
+  display: flex;
+}
+.blog-panel {
+  max-width: 245px; 
+}
+.no-img {
+  margin: 20px 0px 0px auto;
+  ;
+}
+.signature {
+  margin-top: 25px;
+}
+.blog-board {
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.signature > img {
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.blog-panel > img {
+  width: 245px;
+}
+.head-container p {
+  margin-bottom: 35px;
+}

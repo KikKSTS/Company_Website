@@ -1,0 +1,642 @@
+
+
+  /* section 2 */
+  
+.bgs2_1{
+    background-image: url("/images/bg1.jpg");
+    min-height: 700px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+  }
+
+.container{
+  position: relative;
+}
+
+  /* * {box-sizing:border-box} */
+/* Slideshow container */
+
+.pic1{
+  max-width: auto;
+  margin-top:  68px;
+  left: 13%;
+  position: absolute;
+}
+
+.pic1 img{
+  width: auto;
+  height: 550px;
+}
+
+.slideshow-container {
+  max-width: auto;
+  margin: auto;
+  right: 10%;
+  transform: translate(-0%, -114%);
+  position: absolute;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+
+}
+
+.mySlides img{
+  width: auto;
+  height: 550px; 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -30px;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-right: -4px;
+  right: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  margin-left: -12px;
+  left: 1%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot_position{
+  position: absolute;
+  top: -260%;
+  left:65%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-right: 20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ---------------------------------------- */
+
+  /* section 3 */
+
+.boxwhy table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .boxwhy .col1row1{
+    margin-bottom: 10%;
+  }
+
+  .boxwhy .col2row1{
+    margin-bottom: 10%;
+  }
+
+  .boxwhy .colline{
+    height: 180px;
+    padding: 80px 40px;
+    width: 10%;
+    opacity: 0.5;
+  }
+
+/* ---------------------------------------- */
+
+  /* section 4 */
+
+
+  .head h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    position: absolute;
+  }
+
+  .head .btn{
+    background-color: #1a0567;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 590px;
+    margin-top: 150px;
+    border-radius: 60px;
+  }
+
+  .head .btn a{
+    color: rgb(255, 255, 255);
+    margin-top: -50%;
+  }
+
+  .head .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .head .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .head .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .head .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+/* ---------------------------------------- */
+
+  /* section 5 */
+
+  .tablink table{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .tablink .col1row1{
+    margin-bottom: 20%;
+  }
+  
+  .tablink .col2row1{
+    margin-bottom: 10%;
+  }
+  
+  .tablink .colline{
+    height: 80px;
+    padding: 80px 40px;
+    width: 10%;
+    opacity: 0.5;
+  }
+  
+  .tablink .btn{
+    background-color: #1a0567;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+    width: 150px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: -22px;
+    border-radius: 60px;
+  }
+  
+  .tablink .btn a{
+    color: rgb(255, 255, 255);
+    margin-top: -50%;
+  }
+  
+  .tablink .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  
+  .tablink .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .tablink .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .tablink .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .wrap img {
+    max-width: 2000px;
+    width: 100%;
+  }
+  
+  .wrap body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /* set bg */
+  .wrap {
+    position: relative;
+    z-index: 100;
+    width: 94%;
+    height: 600px;
+    padding: 0 60px;
+    margin-top: -50px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .wrap:after {
+    content:'';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+  }
+  
+  .slider {
+    position: relative;
+    z-index: 200;
+    padding: 0 0px;
+    margin: 5rem auto;
+    margin-top: -50px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 63%;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: monospace;
+    font-size: 5rem;
+    z-index: 300;
+    outline: none;
+  }
+  
+  .slick-prev {
+    left: -60px;
+    text-align: center;
+  }
+  
+  .slick-next {
+    right: -45px;
+    text-align: center;
+  }
+  
+  
+  /* set size */
+  .item.slick-slide {
+    width: 800px;
+    height: 400px !important;
+    transition: transform .5s;
+    position: relative; 
+    margin-top: 160px;
+  }
+  
+  .slick-slide:after {
+    content:'';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    transition: transform .4s;
+  }
+  
+  .item.slick-slide {
+    transform: scale(0.7)  translate(640px);
+  }
+  
+  .item.slick-slide.slick-center + .slick-slide {
+    transform: scale(0.8) translate(-250px);
+    z-index: 10;
+  }
+  
+  .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+    transform: scale(0.7)  translate(-640px);
+    z-index: 5;
+  }
+  
+  .item.slick-slide.slick-active {
+    transform: scale(0.8) translate(250px);
+  }
+  
+  .item.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    transform: scale(1);
+    z-index: 30;
+  }
+  
+  .slick-center:after {
+    opacity: 0;
+  } 
+  
+  
+  
+  
+  
+  * {box-sizing: border-box}
+  
+  /* Set height of body and the document to 100% */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #NEWS {background-color: red;}
+  #ANNOUNCEMENT {background-color: green;}
+
+
+/* ---------------------------------------- */
+
+  /* section 6 */
+
+.way{
+  margin: 10%;
+}
+  .text_header{
+    margin-right: 30%;
+  }
+  
+
+  .way img{
+    width: 500px;
+    height: auto;
+    position: relative;
+  }
+
+  /* ---------------------------------------- */
+
+  /* section 7 */
+
+.never_end table{
+  width: auto;
+height: auto;
+
+
+margin-top: 100px;
+margin-left: 700px;}
+
+  /* ---------------------------------------- */
+
+  /* section 8 */
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-section {
+  background: #151414;
+  position: relative;
+  }
+  .footer-cta {
+  border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+  }
+  .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  }
+  .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  }
+  .cta-text span {
+  color: #757575;
+  font-size: 15px;
+  }
+  .footer-content {
+  position: relative;
+  z-index: 2;
+  }
+  .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+  }
+  .footer-logo {
+  margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 200px;
+  }
+  .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+  }
+  .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+  }
+  .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  }
+  .facebook-bg{
+  background: #3B5998;
+  }
+  .twitter-bg{
+  background: #55ACEE;
+  }
+  .google-bg{
+  background: #DD4B39;
+  }
+  .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  }
+  .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+  }
+  .footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+  color: #ff5e14;
+  }
+  .footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  }
+  .subscribe-form {
+  position: relative;
+  overflow: hidden;
+  }
+  .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+  }
+  .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  }
+  .copyright-area{
+  background: #202020;
+  padding: 25px 0;
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+  }
+  
+  .copyright-text{
+    margin-left: 1000px;
+    }
+  
+  .copyright-text p a{
+  color: #ff5e14;
+  }
+  
+  .footer-menu  {
+    margin-left: 1000px;
+  
+    }
+  
+  .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+  color: #ff5e14;
+  }
+  .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  }
+  
+  .row1{
+    margin-left: 500px;
+    padding: 20px;
+  }
+  
+    .row1 td{
+      padding-left: 100px;
+    }
