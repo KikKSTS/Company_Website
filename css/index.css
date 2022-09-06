@@ -1,70 +1,71 @@
+/* section 2 */
+main{
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) 
+  minmax(60px, 1fr); 
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+}
 
-
-  /* section 2 */
-  
-.bgs2_1{
-    background-image: url("/images/bg1.jpg");
-    min-height: 700px;
-    /* Center and scale the image nicely */
-    background-position: center;
+  .container1{
+    background-image:url("/images/bg1.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw; 
+    display: block;
   }
 
-.container{
-  position: relative;
-}
+  .rows2{
+    margin: 100px 300px;
+    display: flex;
+  }
 
-  /* * {box-sizing:border-box} */
-/* Slideshow container */
+  .rows2 img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
 
-.pic1{
-  max-width: auto;
-  margin-top:  68px;
-  left: 13%;
-  position: absolute;
-}
+  .img_left{
+    margin-right: 500px; 
+  }
 
-.pic1 img{
-  width: auto;
-  height: 550px;
-}
+  .slide{
+    position: relative;
+    ;
+  }
 
-.slideshow-container {
-  max-width: auto;
-  margin: auto;
-  right: 10%;
-  transform: translate(-0%, -114%);
-  position: absolute;
-}
+  .slide img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
 
 /* Hide the images by default */
-.mySlides {
-  display: block;
 
-}
-
-.mySlides img{
-  width: auto;
-  height: 550px; 
-}
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  margin-top: -30px;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top: -4.5%;
+    top: 99%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
 /* Position the "next button" to the right */
+
 .next {
   margin-right: -4px;
   right: 1%;
@@ -73,77 +74,73 @@
 
 .prev {
   margin-left: -12px;
-  left: 1%;
+  left: 12%;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* The dots/bullets/indicators */
-.dot_position{
-  position: absolute;
-  top: -260%;
-  left:65%;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-right: 20px;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 /* ---------------------------------------- */
 
-  /* section 3 */
-
-.boxwhy table{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+/* section 3 */
+.boxwhy{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+  .boxwhy table{
+    text-align: center;
+    margin-top: 8%;
+    
+  }  
+
+  .boxwhy .td1{
+    background-color: #fff;
+    box-shadow: 0px 3px 20px 2px rgb(187, 186, 186);  
+    float: left;
+    margin-left: 10%;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
 
   .boxwhy .col1row1{
     margin-bottom: 10%;
+    font-size: 40px;
+    text-align: center;
+
+  }
+
+  .boxwhy .col1row1, .col1row2{
+    padding: 2%;
+  }
+
+  .boxwhy .td2{
+    background-color: #fff;
+    box-shadow: 0px 3px 20px 2px rgb(187, 186, 186);
+    float: right;
+    margin-right: 10%;
+    margin-left: -7px;
+    border-radius: 50px;
   }
 
   .boxwhy .col2row1{
     margin-bottom: 10%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .boxwhy .col2row1, .col2row2{
+    padding: 2%;
+  }
+
+  .boxwhy .col1row2, .col2row2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .boxwhy .colline{
-    height: 180px;
-    padding: 80px 40px;
+    height: 200px;
     width: 10%;
     opacity: 0.5;
   }
 
 /* ---------------------------------------- */
 
-  /* section 4 */
+/* section 4 */
 
 
   .head h1{
@@ -152,7 +149,7 @@
     position: absolute;
   }
 
-  .head .btn{
+  .btn{
     background-color: #1a0567;
     border: none;
     font-size: 18px;
@@ -199,53 +196,35 @@
 /* ---------------------------------------- */
 
   /* section 5 */
-
-  .tablink table{
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-  .tablink .col1row1{
-    margin-bottom: 20%;
-  }
+.head_list{
+  display:flex;
+  align-items: center;
+}
   
-  .tablink .col2row1{
-    margin-bottom: 10%;
-  }
-  
-  .tablink .colline{
-    height: 80px;
-    padding: 80px 40px;
-    width: 10%;
-    opacity: 0.5;
-  }
-  
-  .tablink .btn{
+  .head_list button{
     background-color: #1a0567;
     border: none;
     font-size: 18px;
-    padding: 9px;
     width: 150px;
     transition: all 0.3s;
     cursor: pointer;
-    margin-left: 40px;
-    margin-top: -22px;
     border-radius: 60px;
+    margin-top: -1px;
+    margin-left: -5%;
   }
   
-  .tablink .btn a{
+  .head_list button a{
     color: rgb(255, 255, 255);
-    margin-top: -50%;
   }
   
-  .tablink .btn span {
+  .head_list button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.4s;
   }
   
-  .tablink .btn span:after {
+  .head_list button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -254,11 +233,11 @@
     transition: 0.5s;
   }
   
-  .tablink .btn:hover span {
+  .head_list button:hover span {
     padding-right: 25px;
   }
   
-  .tablink .btn:hover span:after {
+  .head_list button:hover span:after {
     opacity: 1;
     right: 0;
   }
@@ -390,14 +369,14 @@
   
   
   
-  * {box-sizing: border-box}
+  /* * {box-sizing: border-box} */
   
   /* Set height of body and the document to 100% */
-  body, html {
+  /* body, html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-  }
+  } */
   
   /* Style tab links */
   .tablink {
