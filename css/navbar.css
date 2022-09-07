@@ -38,7 +38,15 @@ main{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+
+  .dropdown a img{
+    margin-right: -5px;
+  }
+
+  .dropdown img{
+    height:15px;
   }
 
   .menus button {

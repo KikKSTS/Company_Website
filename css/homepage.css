@@ -1,20 +1,75 @@
-/* section 2 */
+/* section1 */
+.nav{
+  display: flex;
+  align-items: center;  
+  background-color: antiquewhite;
+  height: 90px;
+}
+  .menu a{
+    margin-right: 30%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 main{
-  display: grid;
-  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) 
-  minmax(60px, 1fr); 
   max-height: 500px;
   overflow: hidden;
-  display: flex;
+  width: 100%;
 }
 
   .container1{
     background-image:url("/images/bg1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     height: 100vh;
-    width: 100vw; 
-    display: block;
+    width:100vw; 
   }
 
   .rows2{
@@ -43,10 +98,7 @@ main{
     max-height: 300px;
   }
 
-/* Hide the images by default */
 
-
-/* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -64,7 +116,6 @@ main{
     user-select: none;
   }
 
-/* Position the "next button" to the right */
 
 .next {
   margin-right: -4px;
@@ -77,9 +128,7 @@ main{
   left: 12%;
   border-radius: 3px 0 0 3px;
 }
-/* ---------------------------------------- */
 
-/* section 3 */
 .boxwhy{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -138,9 +187,7 @@ main{
     opacity: 0.5;
   }
 
-/* ---------------------------------------- */
 
-/* section 4 */
 
 
   .head h1{
@@ -193,12 +240,17 @@ main{
   }
 
 
-/* ---------------------------------------- */
 
-  /* section 5 */
+.news{
+  padding-left:40px
+}
 .head_list{
   display:flex;
   align-items: center;
+  margin: 0px 2%;
+  margin-top: 10%;
+  margin-bottom: -15px;
+  padding-top:2%;
 }
   
   .head_list button{
@@ -210,7 +262,8 @@ main{
     cursor: pointer;
     border-radius: 60px;
     margin-top: -1px;
-    margin-left: -5%;
+    margin-left: 2%;
+
   }
   
   .head_list button a{
@@ -242,6 +295,16 @@ main{
     right: 0;
   }
   
+  .head_list h1{
+    width: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  .tabcontent{
+    margin: 0px 2%;
+  }
+
   .wrap img {
     max-width: 2000px;
     width: 100%;
@@ -255,17 +318,17 @@ main{
   }
   
   
-  /* set bg */
   .wrap {
     position: relative;
     z-index: 100;
-    width: 94%;
+    width: 100%;
     height: 600px;
-    padding: 0 60px;
-    margin-top: -50px;
+    margin-top: -100px;
+    margin-left: -20px;
     -webkit-background-size: cover;
     background-size: cover;
     overflow: hidden;
+
   }
   
   .wrap:after {
@@ -282,11 +345,9 @@ main{
   .slider {
     position: relative;
     z-index: 200;
-    padding: 0 0px;
-    margin: 5rem auto;
-    margin-top: -50px;
     max-width: 100%;
     width: 100%;
+    margin-top: -60px;
   }
   
   .slick-arrow {
@@ -306,17 +367,16 @@ main{
   }
   
   .slick-prev {
-    left: -60px;
+    left: -5px;
     text-align: center;
   }
   
   .slick-next {
-    right: -45px;
+    right: -5px;
     text-align: center;
   }
   
   
-  /* set size */
   .item.slick-slide {
     width: 800px;
     height: 400px !important;
@@ -356,7 +416,6 @@ main{
   }
   
   .item.slick-slide.slick-center {
-    /* margin: 0 -10%; */
     transform: scale(1);
     z-index: 30;
   }
@@ -364,21 +423,7 @@ main{
   .slick-center:after {
     opacity: 0;
   } 
-  
-  
-  
-  
-  
-  /* * {box-sizing: border-box} */
-  
-  /* Set height of body and the document to 100% */
-  /* body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-  } */
-  
-  /* Style tab links */
+
   .tablink {
     background-color: #555;
     color: white;
@@ -395,7 +440,6 @@ main{
     background-color: #777;
   }
   
-  /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
     color: white;
     display: none;
@@ -407,14 +451,12 @@ main{
   #ANNOUNCEMENT {background-color: green;}
 
 
-/* ---------------------------------------- */
-
-  /* section 6 */
 
 .way{
-  margin: 10%;
+  margin: 5%;
+  margin-bottom: 10%;
 }
-  .text_header{
+  .texts{
     margin-right: 30%;
   }
   
@@ -422,200 +464,20 @@ main{
   .way img{
     width: 500px;
     height: auto;
-    position: relative;
   }
 
-  /* ---------------------------------------- */
+  .way table{
+    margin:0 15%
+  }
 
-  /* section 7 */
 
+.lastp{
+  background-color: #555;
+}
 .never_end table{
   width: auto;
-height: auto;
-
-
-margin-top: 100px;
-margin-left: 700px;}
-
-  /* ---------------------------------------- */
-
-  /* section 8 */
-
-  ul {
-    margin: 0px;
-    padding: 0px;
-  }
-  .footer-section {
-  background: #151414;
-  position: relative;
-  }
-  .footer-cta {
-  border-bottom: 1px solid #373636;
-  }
-  .single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
-  }
-  .cta-text {
-  padding-left: 15px;
-  display: inline-block;
-  }
-  .cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-  }
-  .cta-text span {
-  color: #757575;
-  font-size: 15px;
-  }
-  .footer-content {
-  position: relative;
-  z-index: 2;
-  }
-  .footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
-  }
-  .footer-logo {
-  margin-bottom: 30px;
-  }
-  .footer-logo img {
-    max-width: 200px;
-  }
-  .footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-      color: #7e7e7e;
-  line-height: 28px;
-  }
-  .footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
-  }
-  .footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-  }
-  .footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-  }
-  .facebook-bg{
-  background: #3B5998;
-  }
-  .twitter-bg{
-  background: #55ACEE;
-  }
-  .google-bg{
-  background: #DD4B39;
-  }
-  .footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
-  }
-  .footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
-  }
-  .footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
-  }
-  .footer-widget ul li a:hover{
-  color: #ff5e14;
-  }
-  .footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
-  }
-  .subscribe-form {
-  position: relative;
-  overflow: hidden;
-  }
-  .subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-  }
-  .subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-  }
-  .subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-  }
-  .copyright-area{
-  background: #202020;
-  padding: 25px 0;
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-  }
-  
-  .copyright-text{
-    margin-left: 1000px;
-    }
-  
-  .copyright-text p a{
-  color: #ff5e14;
-  }
-  
-  .footer-menu  {
-    margin-left: 1000px;
-  
-    }
-  
-  .footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-  }
-  .footer-menu li:hover a{
-  color: #ff5e14;
-  }
-  .footer-menu li a {
-  font-size: 14px;
-  color: #878787;
-  }
-  
-  .row1{
-    margin-left: 500px;
-    padding: 20px;
-  }
-  
-    .row1 td{
-      padding-left: 100px;
-    }
+  height: auto;
+  margin-top: 100px;
+  margin-left: 700px;
+}
+ */

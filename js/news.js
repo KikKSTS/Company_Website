@@ -12,15 +12,15 @@ $('.slider').slick({
   prevArrow:'<button class="slick-prev"> < </button>',
   nextArrow:'<button class="slick-next"> > </button>',
   
-  //         responsive: [                        
-  //             {
-  //               breakpoint: 576,
-  //               settings: {
-  //                 centerMode: false,
-  //                 variableWidth: false,
-  //               }
-  //             },
-  //         ]
+          // responsive: [                        
+          //     {
+          //       breakpoint: 576,
+          //       settings: {
+          //         centerMode: false,
+          //         variableWidth: false,
+          //       }
+          //     },
+          // ]
 });
 
 

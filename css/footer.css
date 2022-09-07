@@ -4,11 +4,13 @@
     padding: 0px;
   }
   .footer-section {
-  background: #151414;
+  background: #e9f2f9;
   position: relative;
   }
   .footer-cta {
-  border-bottom: 1px solid #373636;
+    border-top: 1px solid #12aef7;
+
+  border-bottom: 1px solid #12aef7;
   }
   .single-cta i {
   color: #ff5e14;
@@ -21,7 +23,7 @@
   display: inline-block;
   }
   .cta-text h4 {
-  color: #fff;
+  color: rgb(6, 5, 5);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -55,7 +57,7 @@
   line-height: 28px;
   }
   .footer-social-icon span {
-  color: #fff;
+  color: rgb(0, 0, 0);
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -73,6 +75,7 @@
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+  margin-bottom: 20px;
   }
   .facebook-bg{
   background: #3B5998;
@@ -84,7 +87,7 @@
   background: #DD4B39;
   }
   .footer-widget-heading h3 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -110,7 +113,9 @@
   }
   .footer-widget ul li a {
   color: #878787;
-  text-transform: capitalize;
+  text-transform: capitalize;  
+  text-decoration: none;
+  margin-top: 10px;
   }
   .subscribe-form {
   position: relative;
@@ -125,7 +130,7 @@
   }
   .subscribe-form button {
     position: absolute;
-    right: 0;
+    right: -10px;
     background: #ff5e14;
     padding: 13px 20px;
     border: 1px solid #ff5e14;
@@ -167,6 +172,7 @@
   .footer-menu li a {
   font-size: 14px;
   color: #878787;
+  text-decoration: none;
   }
   
   .row1{
@@ -177,3 +183,52 @@
     .row1 td{
       padding-left: 100px;
     }
+
+    
+.row1{
+  display: flex;
+  justify-content: flex-start;
+}
+  .row1 i{
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  .row1 .cta-text{
+    margin-top: -25px;
+  }
+  
+.row2{
+  display: flex;
+}
+
+.footer-widget{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-widget-heading h3, .footer-text, .subscribe-form{
+margin-bottom:20px;
+}
+
+.row3{
+  margin-left: -200px;
+  text-align: center;
+}
+
+.footer-logo{
+  margin-top: 20px;
+}
+
+.copyright-area{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cta-text h4, .footer-widget-heading h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cta-text span, .footer-widget-heading h3, .footer-text p, .footer-widget ul li a, .copyright-area p, .copyright-area ul li a{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
