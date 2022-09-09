@@ -1,48 +1,9 @@
-
-  ul {
+ul {
     margin: 0px;
     padding: 0px;
   }
   .footer-section {
   background: #e9f2f9;
-  position: relative;
-  }
-  .footer-cta {
-    border-top: 1px solid #12aef7;
-
-  border-bottom: 1px solid #12aef7;
-  }
-  .single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
-  }
-  .cta-text {
-  padding-left: 15px;
-  display: inline-block;
-  }
-  .cta-text h4 {
-  color: rgb(6, 5, 5);
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-  }
-  .cta-text span {
-  color: #757575;
-  font-size: 15px;
-  }
-  .footer-content {
-  position: relative;
-  z-index: 2;
-  }
-  .footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
   }
   .footer-logo {
   margin-bottom: 30px;
@@ -53,7 +14,7 @@
   .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #7e7e7e;
   line-height: 28px;
   }
   .footer-social-icon span {
@@ -130,11 +91,12 @@
   }
   .subscribe-form button {
     position: absolute;
-    right: -10px;
+    right: 0px;
     background: #ff5e14;
     padding: 13px 20px;
     border: 1px solid #ff5e14;
     top: 0;
+    cursor: pointer;
   }
   .subscribe-form button i {
   color: #fff;
@@ -144,24 +106,16 @@
   .copyright-area{
   background: #202020;
   padding: 25px 0;
-  margin: 0;
   font-size: 14px;
   color: #878787;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
-  
-  .copyright-text{
-    margin-left: 1000px;
-    }
-  
   .copyright-text p a{
   color: #ff5e14;
   }
-  
-  .footer-menu  {
-    margin-left: 1000px;
-  
-    }
-  
+
   .footer-menu li {
   display: inline-block;
   margin-left: 20px;
@@ -174,33 +128,6 @@
   color: #878787;
   text-decoration: none;
   }
-  
-  .row1{
-    margin-left: 500px;
-    padding: 20px;
-  }
-  
-    .row1 td{
-      padding-left: 100px;
-    }
-
-    
-.row1{
-  display: flex;
-  justify-content: flex-start;
-}
-  .row1 i{
-    margin-right: 10px;
-    margin-left: -10px;
-  }
-
-  .row1 .cta-text{
-    margin-top: -25px;
-  }
-  
-.row2{
-  display: flex;
-}
 
 .footer-widget{
   margin-left: 50px;
@@ -210,25 +137,12 @@
 .footer-widget-heading h3, .footer-text, .subscribe-form{
 margin-bottom:20px;
 }
-
-.row3{
-  margin-left: -200px;
-  text-align: center;
-}
-
 .footer-logo{
   margin-top: 20px;
 }
-
-.copyright-area{
-  display: flex;
-  justify-content: flex-start;
-}
-
 .cta-text h4, .footer-widget-heading h3{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .cta-text span, .footer-widget-heading h3, .footer-text p, .footer-widget ul li a, .copyright-area p, .copyright-area ul li a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

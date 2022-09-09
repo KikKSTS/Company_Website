@@ -1,4 +1,44 @@
-main{
+/* section1 */
+.nav{
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  /* height: 90px; */
+}
+  .menu{
+    background-color: aquamarine;
+    width: 100%;
+    position: absolute;   /* align-items: center; */
+  }
+
+  .dropdown{
+    /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  margin-left: 50%;
+  background-color: antiquewhite;
+}
+/* .dropdown a, button, img{
+  margin-top: -50px;
+  margin-left: 80px;
+} */
+
+.dropdown a, button:nth-child(1){
+  margin-right: 50px;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* main{
   display:grid;
   grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) 
   minmax(60px, 1fr); 
@@ -94,4 +134,4 @@ main{
 
   .dropdown-content a:hover{
     background-color: #0e65b52c;
-  }
+  } */

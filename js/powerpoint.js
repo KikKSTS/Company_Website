@@ -1,5 +1,3 @@
-/* section 2 */
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

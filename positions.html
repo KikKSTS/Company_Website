@@ -8,7 +8,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/positions.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive/r_positions.css
+    ">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
@@ -20,43 +21,28 @@
 </head>
 <body>
     <!-- section 1 : navbar -->
-    <section>
-        <main>
-            <nav>
+    <section> 
+        <div class="nav">
             <div class="logo">
-                <a href="index.html"><img src="/images/logo.jpg" alt="Yojoies"></a>
+              <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
             </div>
-            <div class="menus">
-                <div class="dropdown">
-                    <a href="#">Home Page</a>
-                    <img src="/images/down-arrow.png" alt="#" class="icn" >
-                    <div class="dropdown-content">
-                        <a href="about_company.html">About Company</a>
-                        <a href="#">Company Project</a>
-                    </div>
-                </div>              
-                <a href="#">Contact Us</a>
-                <button><a href="join_us.html">Join Us</a></button>
-                <img src="/images/line.png" alt="#">  
-                <div class="dropdown">
-                    <a href="#"><img src="/images/lightmode.png" alt="#"></a>
-                    <img src="/images/down-arrow.png" alt="#"  class="icn"  >
-                    <div class="dropdown-content">
-                        <a><img src="/images/dark mode.png" alt="#" ></a>
-                    </div>
-                </div>
+            <div class="topnav" id="myTopnav">
+              <a href="homepage.html">Home Page</a>
+              <a href="contact_us.html">Contact Us</a>
+              <a href="join_us.html" class="join_us">Join Us !</a>  
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          <img class="img_nav" src="/images/line.png" alt="#"> 
                 <div class="dropdown">
                     <a href="#">EN</a>
-                    <img src="/images/down-arrow.png" alt="#"  class="icn" >
                     <div class="dropdown-content">
                         <a href="#">TH</a>
-                        <a href="#">CN</a>
                     </div>
-                </div>                            
-            </div>  
-            </nav>
-        </main>
-
+                </div> 
+            </div>
+                                   
     </section>
 
     <!-- ----------------------------------------------- -->
@@ -170,44 +156,43 @@
             </td>
           </tr>
         </table>
-        <div class="sortby">
-        <div class="dropdown">
+        <!-- <div class="sortby">
+            <div class="dropdown">
             <button class="dropbtn">sort by<img src="/images/down-arrow.png" alt="#" class="icon_down-arrow"></button>
             <div class="dropdown-content">
                 <a href="#">About Company</a>
                 <a href="#">Company Project</a>
-                </div></div></div>
+                </div>
+            </div>
+        </div> -->
+    
 
 <!-- ----------------------------------------------- -->
 
         <!-- section 3 : footer   -->
         <section>
             <footer class="footer-section">
-                
-                <table class="row2">
-                    <div class="footer-content pt-5 pb-5">
-                            <tr>
-                                <td>
-                                    <div class="col-xl-4 col-lg-4 mb-50">
-                                        <div class="footer-widget">
-                                            <div class="footer-logo">
-                                                <a href="index.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
-                                            </div>
-                                            <div class="footer-text">
-                                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit</p>
-                                            </div>
-                                            <div class="footer-social-icon">
-                                                <span>Follow us</span>
-                                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                                            </div>
-                                        </div>
+                <table>
+                      <tr>
+                          <td>
+                                  <div class="footer-widget">
+                                      <div class="footer-logo">
+                                              <a href="homepage.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
+                                      </div>
+                                      <div class="footer-text">
+                                          <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit</p>
+                                      </div>
+                                      <div class="footer-social-icon">
+                                          <span>Follow us</span>
+                                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                          <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                          <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                      </div>
+                                  </div>
                                     </div>
                                 </td>
         
                                 <td>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                                         <div class="footer-widget">
                                             <div class="footer-widget-heading">
                                                 <h3>Useful Links</h3>
@@ -227,7 +212,6 @@
                                 </td>
                     
                                 <td>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                                         <div class="footer-widget">
                                             <div class="footer-widget-heading">
                                                 <h3>Useful Links2</h3>
@@ -246,8 +230,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                        <div class="footer-widget">
+                                    <div class="footer-widget">
                                             <div class="footer-widget-heading">
                                                 <h3>Subscribe</h3>
                                             </div>
@@ -270,12 +253,10 @@
                 
                 <div class="copyright-area">
                         <div class="row3">
-                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                                 <div class="copyright-text">
                                     <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/">YOJOIES CO.,LTD.</LTD></a></p>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                                 <div class="footer-menu">
                                     <ul>
                                         <li><a href="#">Home</a></li>
