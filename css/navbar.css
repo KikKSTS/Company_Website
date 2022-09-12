@@ -1,31 +1,91 @@
-/* section1 */
-.nav{
+*{
+  box-sizing: border-box;
+  font-family: 'Euclid Triangle';
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  display: flex;
+}
+.navbar {
   display: flex;
   align-items: center;
-  background-color: antiquewhite;
-  /* height: 90px; */
+  height: 60px;
 }
-  .menu{
-    background-color: aquamarine;
-    width: 100%;
-    position: absolute;   /* align-items: center; */
-  }
 
-  .dropdown{
-    /* position: absolute; */
+.brand-title img{
+  height: 50px;
+  margin-left: 30px;
   display: flex;
-  flex-direction: row;
-  margin-left: 50%;
-  background-color: antiquewhite;
+  align-items: center;
 }
-/* .dropdown a, button, img{
-  margin-top: -50px;
-  margin-left: 80px;
-} */
 
-.dropdown a, button:nth-child(1){
-  margin-right: 50px;
+.navbar-links{
+  width: 100%;
+}
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li img{
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.navbar-links li a.menu:hover{
+  color: #ff5e14;
+}
+
+.toggle-button{
+  position: absolute;
+  top: 1.1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 15px;
+}
+
+.toggle-button .bar{
+  height: 2.5px;
+  width: 80%;
+  background-color: black;
+  border-radius: 15px;
+}
+
+img.img_nav{
+  height: 20px ;
+}
+
+.lang{
+  display: block;
+  margin-top: 15px;
+  align-self: center;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  font-size: 15px;
 }
 
 
@@ -38,100 +98,74 @@
 
 
 
-/* main{
-  display:grid;
-  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) 
-  minmax(60px, 1fr); 
-  width: 100%;    
-}
-  nav{
-    display: flex; 
-    height: 75px;      
-    grid-column: 1 / span 8;
-    align-items: center;
-  }
 
-  .logo{    
-    margin: 1% 3%;
-  }
 
-  .logo img{
-    width: 200px;
-  }
 
-  .menus{
+
+
+
+@media(max-width:1000px){
+  .toggle-button{
     display: flex;
-    margin-left: auto;
+  }
+
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .menus img{
-    height: 20px;
-  }
-
-  .icn{
-    margin-right: 20px;
-  }
-
-  .menus a, button, img{
-    text-decoration: none;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    margin-right: 10px;
-  }
-
-  .dropdown a img{
-    margin-right: -5px;
-  }
-
-  .dropdown img{
-    height:15px;
-  }
-
-  .menus button {
-    background: rgba(11, 218, 255,0.4);
-    padding: 10px 5px;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s ease, transform 0.2s ease;
+    width: 100%;    
+    background-color: rgb(26, 25, 25);    
 
   }
 
-  .menus button a {
-    color: rgb(21, 16, 16);
-    text-align: center;    
-    margin-right: 5px;
-    padding: 10px;    
-  }
-
-  .menus button:hover{
-    background-color:#FFA004;
-    transform: translateY(3px);
-  }
-
-  .dropdown-content{
-    display:none;
-    background-color: #fff;
-    box-shadow: 0px 0px 80px 5px rgba(0,0,0,0.2);
-    position: absolute;
+  .navbar-links li{
+    text-align: center;   
+ 
     
   }
+  
+  .navbar-links li a.menu{
+    padding: .5rem 1rem;
+    color: white; 
 
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin-right: 0px;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
+  .navbar-links.active{
+    display: flex;      z-index: 100;
+
+
   }
 
-  .dropdown-content a:hover{
-    background-color: #0e65b52c;
-  } */
+  .navbar-links li img{
+    display: none;      
+
+
+  }
+
+  .navbar-links li.lang{
+      display: block; 
+      justify-content: center;   
+
+
+  }
+
+  .navbar-links li button{
+    display: block;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px; 
+    
+}
+
+}

@@ -1,0 +1,110 @@
+* {
+  box-sizing:border-box
+}
+/* section 2 */
+
+.main{
+  height: 100vh;
+  width: 100%;
+}
+.wrapper,
+.slide{
+  width: 100%;
+  height: 100%;
+}
+.slide{
+  overflow: hidden;
+}
+.slide::before{
+  content:"";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index:10;
+}
+.slide .image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text{
+  font-size: 20px;
+  font-weight: 400;
+  color: orangered;
+}
+.image-data h2{
+  font-size: 50px;
+  font-weight: 600;
+  color: orange;
+}
+a.button{
+  display: inline-block;
+  padding:10px 20px;
+  border-radius: 25px;
+  color: gray;
+  background: white;
+  text-decoration: none;
+  margin-top: 30px;
+}
+a.button:hover{
+  color: white;
+  background: orangered;
+}
+
+/* swipe button css */
+.nav-btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 20%;
+  background:rgba(255, 255, 255, 0.5)
+}
+.nav-btn:hover{
+  background:rgba(255, 255, 255, 0.7)
+}
+.swiper-button-next{
+  right: 50px;
+}
+.swiper-button-prev{
+  left: 50px;
+}
+.swiper-pagination-bullet{  
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: aliceblue;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active{  
+  border: 2px solid #fff;
+  background-color:blue
+}
+.nav-btn::before,
+.nav-btn::after{
+  font-size:25px;
+  color: black;
+}
+
+@media screen and (max-width:768px) {
+  .nav-btn{
+    visibility: hidden;
+
+  }
+  .swiper-pagination-bullet{
+    visibility: visible;
+  }
+  
+
+}
+/* ------------------------------------------------------------ */
+
+/

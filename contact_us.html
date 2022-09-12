@@ -7,11 +7,13 @@
     <title>Document</title>
 
     <!-- link -->
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/responsive/r_navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/responsive/r_footer.css">
     <link rel="stylesheet" href="css/contact_us.css">
     <link rel="stylesheet" href="css/responsive/r_contact_us.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -21,27 +23,26 @@
 <body>
      <!-- section 1 : navbar -->
      <section> 
-        <div class="nav">
-            <div class="logo">
-              <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
             </div>
-            <div class="topnav" id="myTopnav">
-              <a href="homepage.html">Home Page</a>
-              <a href="contact_us.html">Contact Us</a>
-              <a href="join_us.html" class="join_us">Join Us !</a>  
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-          <img class="img_nav" src="/images/line.png" alt="#"> 
-                <div class="dropdown">
-                    <a href="#">EN</a>
-                    <div class="dropdown-content">
-                        <a href="#">TH</a>
-                    </div>
-                </div> 
-            </div>
-                                   
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                <li><a href="/homepage.html" class="menu">Home Page</a></li>
+                <li><a href="/contact_us.html" class="menu">Contact Us</a></li>
+                <li><a href="join_us.html" class="menu">Join Us</a></li>
+                <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
+                <li><button id="btn" class="lang">EN</button>
+                </li>
+                </ul>
+            </div>  
+        </nav>       
     </section>
 <!-- ----------------------------------------------- -->
 
@@ -50,8 +51,7 @@
 <section>
     <div class="contact">
         <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7776.679510820995!2d100.89925228562437!3d12.950097919160466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102be0483d27b83%3A0xeead2dd0922739c1!2sThe%20Office!5e0!3m2!1szh-CN!2sth!4v1662108472542!5m2!1szh-CN!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7776.66939582853!2d100.89503863488771!3d12.950422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102bfe9e998eb53%3A0xcce818e0c94fbab6!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5guC4ouC4iOC4reC4ouC4reC4tOC4qiDguYDguJfguITguYLguJnguYLguKXguKLguLUg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1662719665303!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>            
         <div class="find_us">
             <div class="col-xl-4 col-md-4 mb-30">
                 <div class="single-cta">

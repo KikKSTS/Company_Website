@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/responsive/r_navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/responsive/r_footer.css">
     <link rel="stylesheet" href="/css/apply.css">
     <link rel="stylesheet" href="/css/responsive/r_apply.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -19,27 +22,26 @@
 <body>
       <!-- section 1 : navbar -->
       <section> 
-        <div class="nav">
-            <div class="logo">
-              <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
             </div>
-            <div class="topnav" id="myTopnav">
-              <a href="homepage.html">Home Page</a>
-              <a href="contact_us.html">Contact Us</a>
-              <a href="join_us.html" class="join_us">Join Us !</a>  
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-          <img class="img_nav" src="/images/line.png" alt="#"> 
-                <div class="dropdown">
-                    <a href="#">EN</a>
-                    <div class="dropdown-content">
-                        <a href="#">TH</a>
-                    </div>
-                </div> 
-            </div>
-                                   
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                <li><a href="/homepage.html" class="menu">Home Page</a></li>
+                <li><a href="/contact_us.html" class="menu">Contact Us</a></li>
+                <li><a href="join_us.html" class="menu">Join Us</a></li>
+                <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
+                <li><button id="btn" class="lang">EN</button>
+                </li>
+                </ul>
+            </div>  
+        </nav>       
     </section>
 
 <!-- ----------------------------------------------- -->
