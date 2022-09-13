@@ -93,14 +93,14 @@ ul {
     position: absolute;
     right: 0px;
     background: #ff5e14;
-    padding: 13px 20px;
+    padding: 15px 20px;
     border: 1px solid #ff5e14;
     top: 0;
     cursor: pointer;
   }
   .subscribe-form button i {
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   transform: rotate(-6deg);
   }
   .copyright-area{

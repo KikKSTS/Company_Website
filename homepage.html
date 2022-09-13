@@ -7,39 +7,270 @@
     <title>Yojoies Technology</title>
 
     <!-- link -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/homepage.css">
-    <!-- <link rel="stylesheet" href="/css/navbar.css"> -->
+    <link rel="stylesheet" href="/css/responsive/r_homepage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/responsive/r_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 </head>
 <body>
     <!-- navbar -->
-    <nav>
-        <div class="menu">
-            <div class="logo">
-                <img src="/images/logo2.png" alt="Yojoies Technology">
-            </div>
-            <span class="menubtn" onclick="openNav()">&#9776;</span>
-            <div class="navlinks" id="navbar">
-                <ul>
-                    <li><a href="" class="homepage">Home Page</a></li>
-                    <li><a href="" class="contactus">Contact Us</a></li>
-                    <li><a href="" class="joinus">Join Us</a></li>
-                    <li><img src="/images/line.png" alt="#"></li>
-                    <button id="btn">EN</button>
-                </ul>
-            </div>
+    <nav class="navbar">
+        <div class="logo"><a href="/homepage.html"><img src="/images/logo2.png" alt="YOJOIES TECHNOLOGY"></a></div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/homepage.html" class="homepage">Home Page</a></li>
+                <li><a href="/contact_us.html" class="contactus">Contact Us</a></li>
+                <li><a href="/join_us.html" class="joinus">Join Us !</a></li>
+                <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
+                <li><button id="btn" >EN</button></li>
+            </ul>
+        </div>
+        <!-- responsive navbar  -->
+        <div class="rnavbar-links">
+            <ul>
+                <li><a href="/homepage.html" class="r_homepage">Home Page</a></li>
+                <li><a href="/contact_us.html" class="r_contactus">Contact Us</a></li>
+                <li><a href="/join_us.html" class="r_joinus">Join Us !</a></li>
+                <li><button id="btns" >EN</button></li>
+            </ul>
         </div>
     </nav>
 
-        <!-- responsive side navbar -->
-    <div class="sideNav" id="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()">&#10006;</a>
-        <a href="#" class="homepage">Home Page</a>
-        <a href="#" class="contactus">Contact Us</a>
-        <a href="#" class="joinus">Join Us</a>
-        <button id="btns">EN</button>
-    </div>
+<!-- ----------------------------------------------------------------------- -->
+    
+<!-- slider -->
+
+    <section class="slider swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="/images/news1.jpg" alt="" class="image">
+                <!-- text on image  -->
+                <div class="image-data"></div>
+                <span class="text"></span>
+                <h2></h2>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="/images/news2.jpg" alt="" class="image">
+                <!-- text on image  -->
+                <div class="image-data"></div>
+                <span class="text"></span>
+                <h2></h2>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="/images/news3.jpg" alt="" class="image">
+                <!-- text on image  -->
+                <div class="image-data"></div>
+                <span class="text"></span>
+                <h2></h2>
+            </div>
+            
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <!-- box 1 -->
+    <section>
+        <div class="container1">
+            <div class="box1">
+                <div class="box1_info">
+                    <h1>YOJOIES TECHNOLOGY ARE WELCOME</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        <br>Eaque dignissimos sequi expedita maiores harum corporis quis aut accusamus quam eum nam amet autem natus,
+                        <br> temporibus, voluptates nulla vel reiciendis eos.
+                    </p>
+                </div>
+                <div class="img_box1">
+                    <img src="/images/news4.jpg" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <!-- box 2 -->
+    <section>
+
+        <!-- The Timeline -->
+        <ul class="timeline">
+            <!-- Item 1 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">about us</span>
+                        <!-- <span class="time-wrapper"><span class="time">2013 - present</span></span> -->
+                    </div>
+                    <div class="desc">text</div>
+                </div>
+            </li>
+            <!-- Item 2 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">our values</span>
+                        <!-- <span class="time-wrapper"><span class="time">2011 - 2013</span></span> -->
+                    </div>
+                    <div class="desc">text</div>
+                </div>
+            </li>
+            <!-- Item 3 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">our mission</span>
+                        <!-- <span class="time-wrapper"><span class="time">2008 - 2011</span></span> -->
+                    </div>
+                    <div class="desc">text</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <!-- box 3 -->
+
+    <section>
+        <div class="container3">
+            <div class="box3">
+                <div class="box3_info1">
+                    <h1>WHY INVEST DIGITAL CURRENCY ?</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error unde rerum assumenda et! Aliquid iusto repudiandae ratione quisquam, quasi quia dignissimos doloribus odio. Id nostrum natus quo est quia!</p>
+                </div>
+                <div class="box3_info2">
+                    <h1>WHY INVEST WITH YOJOIES ?</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error unde rerum assumenda et! Aliquid iusto repudiandae ratione quisquam, quasi quia dignissimos doloribus odio. Id nostrum natus quo est quia!</p>
+                </div>
+            </div> 
+        </div> 
+    </section >
+
+<!-- ----------------------------------------------------------------------- -->
+
+    <!-- box 4 -->
+
+    <section>
+        <div class="container4">
+            <div class="box4">
+                <div class="box4_info1">
+                    <h1>Have Crypto Portfolio Easy !</h1>
+                    <h4>Only 3 Steps</h4>
+                </div>
+                <div class="box4_info2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error unde rerum assumenda et! Aliquid iusto repudiandae ratione quisquam, quasi quia dignissimos doloribus odio. Id nostrum natus quo est quia!</p>
+                </div>
+            </div> 
+        </div> 
+    </section >
+
+<!-- ----------------------------------------------- -->
+
+<!--  footer   -->
+    <section>
+        <footer class="footer-section">
+            <table>
+                <tr>
+                    <td>
+                        <div class="footer-widget">
+                        <div class="footer-logo">
+                                <a href="homepage.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                        </div>
+                    </td>
+                    <td>
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="market.html">Market</a></li>
+                                    <li><a href="contact_us.html">Contact</a></li>
+                                    <li><a href="about_company.html">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="join_us.html">Join Us</a></li>
+                                    <li><a href="contact_us.html">Contact us</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+        
+                    <td>
+                        <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </div>
+        </table>
+            
+            
+            <div class="copyright-area">
+                    <div class="row3">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/">YOJOIES CO.,LTD.</LTD></a></p>
+                            </div>
+                        </div>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+    </section>
+
+<!-- ----------------------------------------------------------------------------- -->
+
     <!-- script  -->
     <script src="/js/navbar.js"></script>
+    <script src="/js/r_navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
 </body>
 </html>
+

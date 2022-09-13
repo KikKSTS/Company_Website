@@ -5,44 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="/css/navbar.css">
+    
+    <link rel="stylesheet" href="/css/apply.css">
+    <link rel="stylesheet" href="/css/responsive/r_apply.css">
     <link rel="stylesheet" href="/css/responsive/r_navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="/css/responsive/r_footer.css">
-    <link rel="stylesheet" href="/css/apply.css">
-    <link rel="stylesheet" href="/css/responsive/r_apply.css">
-    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     
 </head>
 <body>
-      <!-- section 1 : navbar -->
-      <section> 
-        <nav class="navbar">
-            <div class="brand-title">
-                <a href="homepage.html"><img src="/images/logo.jpg" alt="Yojoyies Technology"></a>
-            </div>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                <li><a href="/homepage.html" class="menu">Home Page</a></li>
-                <li><a href="/contact_us.html" class="menu">Contact Us</a></li>
-                <li><a href="join_us.html" class="menu">Join Us</a></li>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="logo"><a href="/homepage.html"><img src="/images/logo2.png" alt="YOJOIES TECHNOLOGY"></a></div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/homepage.html" class="homepage">Home Page</a></li>
+                <li><a href="/contact_us.html" class="contactus">Contact Us</a></li>
+                <li><a href="/join_us.html" class="joinus">Join Us !</a></li>
                 <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
-                <li><button id="btn" class="lang">EN</button>
-                </li>
-                </ul>
-            </div>  
-        </nav>       
-    </section>
+                <li><button id="btn" >EN</button></li>
+            </ul>
+        </div>
+        <!-- responsive navbar  -->
+        <div class="rnavbar-links">
+            <ul>
+                <li><a href="/homepage.html" class="r_homepage">Home Page</a></li>
+                <li><a href="/contact_us.html" class="r_contactus">Contact Us</a></li>
+                <li><a href="/join_us.html" class="r_joinus">Join Us !</a></li>
+                <li><button id="btns" >EN</button></li>
+            </ul>
+        </div>
+    </nav>
 
 <!-- ----------------------------------------------- -->
 
@@ -193,6 +192,7 @@
 
     <!-- script -->
     <script src="/js/navbar.js"></script>
+    <script src="/js/r_navbar.js"></script>
 </body>
 
 </html>

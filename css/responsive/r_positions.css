@@ -1,30 +1,59 @@
-@media only screen and (max-width:1000px){
+@media screen and (max-width:1000px){
 
-    /* section 1 */
-    
-    .topnav a{
+  /* navbar */
+    .toggle-btn{
+      display: flex;
+      margin: 30px;
+    }
+    .navbar-links{
       display: none;
     }
-    
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    
-    .topnav.responsive {
-      position: relative;
-    }
-    
-    .topnav.responsive .icon {
+    .rnavbar-links{
+      display: none;
       position: absolute;
-      right: 0;
-      top: 0;
+      top: 100px;
+      width: 100%;
+      z-index: 100;
     }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    .navbar{
+      display: flex;
+      flex-direction: column;    
+      align-items: flex-start;
     }
+    .rnavbar-links ul{
+      width: 100%;
+      flex-direction: column;    
+      background-color: rgba(0, 0, 0, 0.8);  
+    }
+    .rnavbar-links ul li{
+      text-align: center;    
+      padding: 5px;
+      margin-top: 20px;
+    }
+    .rnavbar-links ul li a{
+      color: white;
+    }
+    .rnavbar-links ul li .r_joinus{
+      background-color: rgb(92, 185, 247);
+      color: white;
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
+    .rnavbar-links ul li .r_joinus:hover{
+        background-color: orange;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    .rnavbar-links ul li button{
+      margin-bottom: 20px;
+      margin-right: -1px;
+      padding: 5px 10px;
+    }
+    .rnavbar-links.active{
+      display: flex;
+    }
+  
     
     
     /* section 3 */
