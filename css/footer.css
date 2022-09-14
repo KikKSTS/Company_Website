@@ -4,6 +4,16 @@ ul {
   }
   .footer-section {
   background: #e9f2f9;
+  box-shadow: 0 -2px 20px 1px rgb(224, 224, 224);
+  }
+  .footer-section table{
+    width: 100%;
+    }
+  .footer-section tr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 5%;
   }
   .footer-logo {
   margin-bottom: 30px;
@@ -44,30 +54,33 @@ ul {
   .twitter-bg{
   background: #55ACEE;
   }
-  .google-bg{
-  background: #DD4B39;
+  .line-bg{
+  background: green;
   }
   .footer-widget-heading h3 {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
+  margin-top: 20px;
   margin-bottom: 40px;
   position: relative;
   }
   .footer-widget-heading h3::before {
   content: "";
   position: absolute;
-  left: 0;
   bottom: -15px;
   height: 2px;
   width: 50px;
   background: #ff5e14;
   }
+  .footer-widget ul{
+    margin-top: 30px;
+    }
   .footer-widget ul li {
   display: inline-block;
   float: left;
   width: 50%;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   }
   .footer-widget ul li a:hover{
   color: #ff5e14;
@@ -114,18 +127,6 @@ ul {
   }
   .copyright-text p a{
   color: #ff5e14;
-  }
-
-  .footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-  }
-  .footer-menu li:hover a{
-  color: #ff5e14;
-  }
-  .footer-menu li a {
-  font-size: 14px;
-  color: #878787;
   text-decoration: none;
   }
 
@@ -139,10 +140,4 @@ margin-bottom:20px;
 }
 .footer-logo{
   margin-top: 20px;
-}
-.cta-text h4, .footer-widget-heading h3{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.cta-text span, .footer-widget-heading h3, .footer-text p, .footer-widget ul li a, .copyright-area p, .copyright-area ul li a{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -56,6 +56,15 @@
 
   /* -------------------------------------------------------------- */
 
+  /* slider  */
+
+  /* On smaller screens, decrease text size */
+
+  .prev, .next,.text {font-size: 11px}
+
+
+  /* -------------------------------------------------------------- */
+
 /* box 1 */
   .box1_info{
     display: flex;

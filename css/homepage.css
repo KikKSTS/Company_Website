@@ -41,18 +41,12 @@
     color:orange;
     font-weight: bolder;
 }
-.navbar-links ul li .joinus{
-    background-color: rgb(92, 185, 247);
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
+.navbar-links ul li a:active,
+.rnavbar-links ul li a:active{
+    color:orange;
+    font-weight: bolder;
 }
-.navbar-links ul li .joinus:hover{
-    background-color: orange;
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-}
+
 .navbar-links img{
     height: 20px;
 }
@@ -94,81 +88,64 @@
 }
 /* --------------------------------------------------------------- */
 
-/* slider  : use swiperJS */
-.slider{
-    height: 600px;
-    width: 80%;
-    background-color: black;
-    margin-top: 6%;
-    border-radius: 30px;
+.mySlides {display: none
 }
-.wrapper, .slide{
-    width: 100%;
-    height: 100%;
+img {
+  vertical-align: middle;
+  border-radius: 40px;
 }
-.slide::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
-    z-index: 10;
-}
-.slide .image{
-    width: 100%;
-    height: 100%;
-}
-.slide .image-data{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: 100;
-}
-.image-data span .text{
-    font-size: 14px;
-    font-weight: 400;
-    color: #ffffff;
-}
-.image-data h2{
-    font-size: 45px;
-    font-weight: 600;
-    color: #ffffff;
-}
-    /* swiper button  */
-    .nav-btn{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-    }
-    .nav-btn:hover{
-        background-color: rgba(0, 0, 0, 0.395);
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-    }
-    .swiper-button-next{
-        right: 20px;
-    }
-    .swiper-button-prev{
-        left: 20px;
-    }
 
-    .nav-btn::before, .nav-btn::after{
-        font-size: 20px;
-        color: #ffffff;
-    }
-    .swiper-pagination-bullet{
-        opacity:1;
-        height: 12px;
-        width: 12px;
-        background-color: rgba(141, 141, 141, 0.436);
-    }
-    .swiper-pagination-bullet-active{
-        border: 1px solid rgba(255, 255, 255, 0.81);
-        background-color: rgb(52, 51, 51);
-    }
+/* Slideshow container */
+.slideshow-container {
+  display: block;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  border-radius: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
+}
+.prev {
+  left: -50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(141, 141, 141, 0.8);
+  border-radius: 50%;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -185,216 +162,48 @@
 }
 .box1_info h1{
     word-spacing: 5px;
+    font-size: 2.3rem;
 }
 .box1_info p{
     margin-top: 50px;
 }
 .img_box1 img{
     height: auto;
-    width: 100%;
+    width: 80%;
     padding: 10%;
 }
 
 /* ---------------------------------------------------------------------------- */
 
 /* box2 */
-.timeline {
-    position: relative;
-    width: 660px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 1em 0;
-    list-style-type: none;
-    display: block;
-  }
-  
-  .timeline:before {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: ' ';
-    display: block;
-    width: 6px;
-    height: 100%;
-    margin-left: -3px;
-    background: rgb(80,80,80);
-    background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, orange 8%, orange 92%, rgba(80,80,80,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,orange), color-stop(100%,rgba(125,185,232,1)));
-    background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, orange 8%, orange 92%, rgba(80,80,80,0) 100%);
-    background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, orange 8%, orange 92%, rgba(80,80,80,0) 100%);
-    background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, orange 8%, orange 92%, rgba(80,80,80,0) 100%);
-    background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, orange 8%, orange 92%, rgba(80,80,80,0) 100%);
-    z-index: 5;
-  }
-  
-  .timeline li {
-    padding: 1em 0;
-  }
-  
-  .timeline li:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
-  
-  .direction-l {
-    position: relative;
-    width: 300px;
-    float: left;
-    text-align: right;
-  }
-  
-  .direction-r {
-    position: relative;
-    width: 300px;
-    float: right;
-  }
-  
-  .flag-wrapper {
-    position: relative;
-    display: inline-block;
 
-    text-align: center;
-  }
-  
-  .flag {
-    position: relative;
-    display: inline;
-    background: rgb(248,248,248);
-    padding: 6px 10px;
-    border-radius: 5px;
-    
-    font-weight: 600;
-    text-align: left;
-  }
-  
-  .direction-l .flag {
-    -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  }
-  
-  .direction-r .flag {
-    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  }
-  
-  .direction-l .flag:before,
-  .direction-r .flag:before {
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    content: ' ';
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin-top: -10px;
-    background: #fff;
-    border-radius: 10px;
-    border: 4px solid rgb(92, 185, 247);
-    z-index: 10;
-  }
-  
-  .direction-r .flag:before {
-    left: -40px;
-  }
-  
-  .direction-l .flag:after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-left-color: rgb(248,248,248);
-    border-width: 8px;
-    pointer-events: none;
-  }
-  
-  .direction-r .flag:after {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-right-color: rgb(248,248,248);
-    border-width: 8px;
-    pointer-events: none;
-  }
-  
-  .time-wrapper {
-    display: inline;
-    
-    line-height: 1em;
-    font-size: 0.66666em;
-    color: rgb(250,80,80);
-    vertical-align: middle;
-  }
-  
-  .direction-l .time-wrapper {
-    float: left;
-  }
-  
-  .direction-r .time-wrapper {
-    float: right;
-  }
-  
-  .time {
-    display: inline-block;
-    padding: 4px 6px;
-    background: rgb(248,248,248);
-  }
-  
-  .desc {
-    margin: 1em 0.75em 0 0;
-    
-    font-size: 0.77777em;
-    font-style: italic;
-    line-height: 1.5em;
-  }
-  
-  .direction-r .desc {
-    margin: 1em 0 0 0.75em;
-  }
-
-/* -------------------------------------------------------------- */
-
-/* ิbox 3 */
-.container3{
+.container2{
 }
-.box3{
+.box2{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.box3_info1,
-.box3_info2{
+.box2_info1,
+.box2_info2{
     background-color:rgb(196, 232, 255) ;
     margin:5%;
     padding: 100px 50px;
     border-radius: 50px;
     box-shadow: 0 6px 20px 1px rgb(153, 203, 236);
 }
-.box3_info1 h1,
-.box3_info2 h1{
+.box2_info1 h1,
+.box2_info2 h1{
     word-spacing: 5px;
 }
-.box3_info1 hr{
+.box2_info1 hr{
     padding: 0;
     margin:3% 15%;
     border: 2px solid orange;
     border-radius: 20px;
     background-color: orange;
 }
-.box3_info2 hr{
+.box2_info2 hr{
     padding: 0;
     margin:3% 19%;
     border: 2px solid orange;
@@ -403,18 +212,3 @@
 }
 
 /* -------------------------------------------------------------- */
-
-/* ิbox 4 */
-.box4{
-    display: flex;
-    flex-direction: column;
-}
-.box4_info1{
-    margin: 8%;
-}
-.box4_info2{
-    width: 100%;
-    background-color: gray;
-    padding: 10%;
-    margin-bottom: 100px;
-}
