@@ -40,6 +40,11 @@
   color:orange;
   font-weight: bolder;
 }
+.navbar-links ul li a.active,
+.rnavbar-links ul li a.active{
+    color:orange;
+    font-weight: bolder;
+}
 .navbar-links ul li .joinus{
   background-color: rgb(92, 185, 247);
   color: white;

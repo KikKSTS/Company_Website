@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yojoies - HR</title>
     
     <link rel="stylesheet" href="/css/apply.css">
     <link rel="stylesheet" href="/css/responsive/r_apply.css">
@@ -15,29 +15,36 @@
     
 </head>
 <body>
-      <!-- navbar -->
-      <nav class="navbar">
-        <div class="logo"><a href="/homepage.html"><img src="/images/logo2.png" alt="YOJOIES TECHNOLOGY"></a></div>
+    
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/homepage.html">
+                <img src="/images/logo2.png" alt="YOJOIES TECHNOLOGY">
+            </a>
+        </div>
         <a href="#" class="toggle-btn">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
-        <div class="navbar-links">
+        <div class="navbar-links" id="navac">
             <ul>
-                <li><a href="/homepage.html" class="homepage">Home Page</a></li>
-                <li><a href="/contact_us.html" class="contactus">Contact Us</a></li>
-                <li><a href="/join_us.html" class="joinus">Join Us !</a></li>
+                <li><a href="/homepage.html" class="btnac">Home Page</a></li>
+                <li><a href="/contact_us.html" class="btnac">Contact Us</a></li>
+                <li><a href="/join_us.html" class="btnac active">Join Us !</a></li>
                 <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
                 <li><button id="btn" >EN</button></li>
             </ul>
         </div>
+
         <!-- responsive navbar  -->
-        <div class="rnavbar-links">
+        <div class="rnavbar-links" id="r_navac">
             <ul>
-                <li><a href="/homepage.html" class="r_homepage">Home Page</a></li>
-                <li><a href="/contact_us.html" class="r_contactus">Contact Us</a></li>
-                <li><a href="/join_us.html" class="r_joinus">Join Us !</a></li>
+                <li><a href="/homepage.html" class="r_btnac">Home Page</a></li>
+                <li><a href="/contact_us.html" class="r_btnac">Contact Us</a></li>
+                <li><a href="/join_us.html" class="r_btnac active">Join Us !</a></li>
                 <li><button id="btns" >EN</button></li>
             </ul>
         </div>
@@ -45,7 +52,8 @@
 
 <!-- ----------------------------------------------- -->
 
-<!-- section 2 : header -->
+    <!-- box 1  -->
+
     <div class="position">
         <table>
             <td style="width:80%;">
@@ -58,11 +66,11 @@
                 <img src="/images/hr.png" alt="HR" class="icn">
             </td> 
         </table>
-
-
-
-        
     </div>
+
+<!-- ----------------------------------------------- -->
+
+    <!-- box 2  -->
 
     <section>
         <div class="contact">      
@@ -71,10 +79,8 @@
                 <p type="Name:"><input placeholder="Full Name here..."></input></p>
                 <p type="Email:"><input placeholder="Email here..."></input></p>
                 <p type="Tel:"><input placeholder="Telephone here..."></input></p>
-                <p type="ADDITIONAL INFORMATION
-                :">    
-                <textarea id="additional
-                " name="description" placeholder="add a cover letter or anything here....." ></textarea>
+                <p type="ADDITIONAL INFORMATION:">    
+                    <textarea id="additional" name="description" placeholder="add a cover letter or anything here....." ></textarea>
                 </p>
                 <p>Add resume / CV here...</p>
                 <form class="addfile" action="/action_page.php">
@@ -85,8 +91,10 @@
         </div>
     </section>
 
+<!-- ----------------------------------------------- -->
 
-        <!-- section 8 : footer   -->
+    <!-- footer   -->
+
         <section>
             <footer class="footer-section">
                 <table>
@@ -94,16 +102,7 @@
                         <td>
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                        <a href="homepage.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
-                                </div>
-                                <div class="footer-text">
-                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit</p>
-                                </div>
-                                <div class="footer-social-icon">
-                                    <span>Follow us</span>
-                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                    <a href="homepage.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
                                 </div>
                             </div>
                         </td>
@@ -113,9 +112,9 @@
                                     <h3 class="head1">Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <span><li><a href="index.html">Home</a></li>
+                                    <li><a href="homepage.html">Home</a></li>
                                     <li><a href="about_company.html">About us</a></li>
-                                    <li><a href="#">Our Services</a></li></span>
+                                    <li><a href="#">Our Services</a></li>
                                     <li><a href="join_us.html">Join Us</a></li>
                                     <li><a href="contact_us.html">Contact us</a></li>
                                 </ul>
@@ -123,19 +122,13 @@
                         </td>
                         <td>
                             <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3 class="head2">Subscribe</h3>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-line line-bg"></i></a>
                                 </div>
-                                <div class="footer-text mb-25">
-                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                                </div>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="text" placeholder="Email Address">
-                                        <button><i class="fab fa-telegram-plane"></i></button>
-                                    </form>
-                                </div>
-                            </div>
+                            </div> 
                         </td>
                     </tr>
                 </table>
@@ -143,16 +136,20 @@
                 <div class="copyright-area">
                     <div class="row3">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/">YOJOIES TECHNOLOGY CO.,LTD.</LTD></a></p>
+                            <p>Copyright &copy; 2022.&nbsp;
+                                <a href="https://codepen.io/anupkumar92/">YOJOIES</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </footer>
         </section>
 
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
     <!-- script -->
     <script src="/js/navbar.js"></script>
     <script src="/js/r_navbar.js"></script>
-</body>
 
+</body>
 </html>

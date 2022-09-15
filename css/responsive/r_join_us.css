@@ -33,18 +33,6 @@
     .rnavbar-links ul li a{
       color: white;
     }
-    .rnavbar-links ul li .r_joinus{
-      background-color: rgb(92, 185, 247);
-      color: white;
-      border-radius: 10px;
-      padding: 5px 10px;
-    }
-    .rnavbar-links ul li .r_joinus:hover{
-        background-color: orange;
-        color: white;
-        border-radius: 10px;
-        padding: 5px 10px;
-    }
     .rnavbar-links ul li button{
       margin-bottom: 20px;
       margin-right: -1px;
@@ -54,41 +42,77 @@
       display: flex;
     }
   
-  /* section 3 */
+/* --------------------------------------------------------- */
+
+  /* box1 */
   
   .box1{
-    margin: 10%;
+
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
   
-  .text1{
-    text-align: center;
-  } 
+  .text1 h1{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+  .text1 p{
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+  }
     
   /* --------------------------------------------------------- */
   
-  /* section 4 */
+  /* box 2 */
   
-  .why1{
+  .container2{
+    background-image: none;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
   }
+  .text2_info1 h1,
+  .text2_info2 h1{
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.text2_info1 p{
+  font-size: 1rem;
+  padding:0px 22%;
+}
+
+.text2_info2 ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.text2_info2 ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;  
+  font-size: 1.5rem;
+}
   
   /* --------------------------------------------------------- */
   
-  /* section 5 */
+  /* box 3 */
   
-  .box3_1{
-    margin: 10%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+  .regis h1{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
   }
-  
-  .text3_1{
-    text-align: center;
+  .regis p{
+    font-size: 1.3rem;
+    margin-bottom: 80px;
   }
   
   /* --------------------------------------------------------- */

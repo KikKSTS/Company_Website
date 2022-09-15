@@ -10,6 +10,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  box-shadow: 0 1px 20px 1px rgb(224, 224, 224);
+
 }
 .logo img{
   height:70px;
@@ -36,6 +38,11 @@
 }
 .navbar-links ul li a:hover,
 .rnavbar-links ul li a:hover{
+  color:orange;
+  font-weight: bolder;
+}
+.navbar-links ul li a.active,
+.rnavbar-links ul li a.active{
   color:orange;
   font-weight: bolder;
 }
@@ -102,26 +109,36 @@ iframe{
   margin:2%;
   height: 650px;
 }
-
 .find_us{
   display: flex;
-  justify-content: center;
-  margin-top: -15px;
+  justify-content: flex-start;
+}
+.col-xl-4{
+  margin-bottom: 30px;  
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .single-cta{
   display: flex;
-  justify-content: center;   
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 15px;
 }
 .fas {
   height: 20%;
 }
 .single-cta i{
-  margin: 35px;
+  margin-top: 35px;
   font-size: 30px;
   color: #ff5e14;
+
+}
+.cta-text{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
 }
 .cta-text h4{
   color: aliceblue;

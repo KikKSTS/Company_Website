@@ -11,6 +11,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  box-shadow: 0 1px 20px 1px rgb(224, 224, 224);
+
 }
 .logo img{
   height:70px;
@@ -51,6 +53,11 @@
   color: white;
   border-radius: 10px;
   padding: 10px;
+}
+.navbar-links ul li a.active,
+.rnavbar-links ul li a.active{
+    color:orange;
+    font-weight: bolder;
 }
 .navbar-links img{
   height: 20px;

@@ -27,6 +27,21 @@ btns.addEventListener('click', function handleClick() {
   }
 });
 
+//active button menu
+// Add active class to the current button (highlight it)
+var header = document.getElementById("navac");
+var btnac = header.getElementsByClassName("btnac");
+for (var i = 0; i < btnac.length; i++) {
+  btnac[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+
+
 
 
 
