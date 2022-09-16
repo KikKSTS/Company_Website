@@ -70,7 +70,56 @@
     } 
       
     /* --------------------------------------------------------- */
+        
+.wrap{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wrap p{
+  margin-bottom: 20px;
+}
+  .search {
+    width: 70%;
+    position: relative;
+    display: flex;  
+  }
+
+.table{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.info1{
+  display: flex;
+  flex-direction: column;
+}
+.info1 h1{
+  font-size: 1.5rem;
+}
+.info1 p{
+  margin-top: 10px;
+}
+.icons img{
+  display: none;
+}
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* --------------------------------------------------------- */
+
+
 /* footer */
 
 .single-cta{
@@ -117,7 +166,6 @@
     width: 50px;
     background: #ff5e14;
   }
-  }
+
   
-  
-  
+}

@@ -100,66 +100,113 @@
 }
 /* --------------------------------------------------------------- */
 
-  
-  #myInput {
-    background-image: url('/images/search.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }
-  
-  #myTable {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 18px;
-  }
-  
-  #myTable th, #myTable td {
-    text-align: left;
-    padding: 12px;
-  }
-  
-  #myTable tr {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  #myTable tr.header, #myTable tr:hover {
-    background-color: #f1f1f1;
-  }
 
-.sortby {
-    height: 10px;
-    float: left;
-  }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-    /* ---------------------------------------- */
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+.headerlist{  
+  display: flex;
+  margin-top: 30px;
+}
+.wrap{  
+  margin: 0 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap p{  
+  font-size: 2rem;
+}
+.search {
+  width: 30%;
+  position: relative;
+  display: flex;  
+}
+.searchTerm {
+  width: 100%;
+  border: 4px solid #fc9048;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
 
-  
+.searchTerm:focus{
+  color: #000000;
+}
 
-    table .btn {
-      background-color: #4e4e4e;
-      border: none;
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      font-size: 16px;
-      margin: 4px 2px;
-      opacity: 0.6;
-      transition: 0.3s;      
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #fc9048;
+  background: #fc9048;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
 
-    }
-    
-    table .btn:hover {opacity: 1}
 
-    table .btn a:link, a:visited {
-      color: rgb(0, 0, 0);
-      text-align: center;
-      text-decoration: none;
+.table{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
 
-    }
-    
+.list{
+  padding: 20px 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(118, 118, 117);
+  background-color: rgb(216, 213, 213);
+}
+.list:hover{
+
+  border-left: 12px solid rgb(244, 136, 28);
+  background-color: rgb(188, 186, 186);
+}
+.list a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+  width: 100%;
+}
+.info1{
+  justify-content: center;
+  align-items: center;
+  padding:15px 10px;
+}
+.info1 p{
+  margin-top: 10px;
+}
+.info2{
+  display: flex;  
+  margin-top: 20px;
+}
+.info2 p{
+  display: flex;
+  align-items: center;
+}
+.info2 .employee,
+.info2 .salary{
+  margin-right: 30px;
+}
+.info2 img{
+  height: 22px;
+}
+.icons img{
+  height: 100px;
+}
