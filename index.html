@@ -7,10 +7,10 @@
     <title>Yojoies Technology</title>
 
     <!-- link -->
-    <link rel="stylesheet" href="/css/homepage.css">
-    <link rel="stylesheet" href="/css/responsive/r_homepage.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/responsive/r_footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive/r_index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive/r_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 </head>
@@ -19,8 +19,8 @@
 
     <nav class="navbar">
         <div class="logo">
-            <a href="/index.html">
-                <img src="/images/logo2.png" alt="YOJOIES TECHNOLOGY">
+            <a href="index.html">
+                <img src="images/logo2.png" alt="YOJOIES TECHNOLOGY">
             </a>
         </div>
         <a href="#" class="toggle-btn">
@@ -30,10 +30,10 @@
         </a>
         <div class="navbar-links" id="navac">
             <ul>
-                <li><a href="/index.html" class="btnac active">Home Page</a></li>
-                <li><a href="/contact_us.html" class="btnac">Contact Us</a></li>
-                <li><a href="/join_us.html" class="btnac">Join Us !</a></li>
-                <li><img class="img_nav" src="/images/line.png" alt="#"> </li>
+                <li><a href="index.html" class="btnac active">Home Page</a></li>
+                <li><a href="contact_us.html" class="btnac">Contact Us</a></li>
+                <li><a href="join_us.html" class="btnac">Join Us !</a></li>
+                <li><img class="img_nav" src="images/line.png" alt="#"> </li>
                 <li><button id="btn" >EN</button></li>
             </ul>
         </div>
@@ -41,9 +41,9 @@
         <!-- responsive navbar  -->
         <div class="rnavbar-links" id="r_navac">
             <ul>
-                <li><a href="/homepage.html" class="r_btnac active">Home Page</a></li>
-                <li><a href="/contact_us.html" class="r_btnac">Contact Us</a></li>
-                <li><a href="/join_us.html" class="r_btnac">Join Us !</a></li>
+                <li><a href="index.html" class="r_btnac active">Home Page</a></li>
+                <li><a href="contact_us.html" class="r_btnac">Contact Us</a></li>
+                <li><a href="join_us.html" class="r_btnac">Join Us !</a></li>
                 <li><button id="btns" >EN</button></li>
             </ul>
         </div>
@@ -52,34 +52,28 @@
 <!-- ----------------------------------------------------------------------- -->
     
 <!-- slider -->
-<section>
-    <div class="slides">
-<div class="slideshow-container">
+<div class="powerpoint">
+    <section class="home">
+        <div class="slider">
+            <div class="fade active" style="background-image: url('images/slide/img1.png')">
+            </div>
+            <div class="fade" style="background-image: url('images/slide/img2.png')">
+            </div>
+            <div class="fade" style="background-image: url('images/slide/img3.png')">
+            </div>
+        </div>
+            <!-- controls  -->
+            <div class="controls">
+                <div class="prev"><</div>
+                <div class="next">></div>
+            </div>
 
-    <div class="mySlides fade">
-      <img src="/images/slide img/img1.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="/images/slide img/img2.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <img src="/images/slide img/img3.png" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div></div>
-</section>   
+            <!-- indicators -->
+            <div class="indicator">
+            </div>
+        
+    </section>
+</div>  
 
 <!-- ----------------------------------------------------------------------- -->
 
@@ -95,7 +89,7 @@
                     </p>
                 </div>
                 <div class="img_box1">
-                    <img src="/images/photo_2022-09-14_16-47-00.jpg" alt="#">
+                    <img src="images/photo_2022-09-14_16-47-00.jpg" alt="#">
                 </div>
             </div>
         </div>
@@ -132,7 +126,7 @@
                 <td>
                     <div class="footer-widget">
                         <div class="footer-logo">
-                                <a href="homepage.html"><img src="/images/logo2.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="images/logo2.png" class="img-fluid" alt="logo"></a>
                         </div>
                     </div>
                 </td>
@@ -177,9 +171,9 @@
 <!-- ----------------------------------------------------------------------------- -->
 
     <!-- script  -->
-    <script src="/js/navbar.js"></script>
-    <script src="/js/r_navbar.js"></script>
-    <script src="/js/powerpoint.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/r_navbar.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>
 

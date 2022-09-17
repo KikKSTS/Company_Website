@@ -1,60 +1,46 @@
 @media only screen and (max-width:1000px){
 
-  @media screen and (max-width:1000px){
-
-    /* navbar */
-      .toggle-btn{
-        display: flex;
-        margin: 30px;
-      }
-      .navbar-links{
-        display: none;
-      }
-      .rnavbar-links{
-        display: none;
-        position: absolute;
-        top: 100px;
-        width: 100%;
-        z-index: 100;
-      }
-      .navbar{
-        display: flex;
-        flex-direction: column;    
-        align-items: flex-start;
-      }
-      .rnavbar-links ul{
-        width: 100%;
-        flex-direction: column;    
-        background-color: rgba(0, 0, 0, 0.8);  
-      }
-      .rnavbar-links ul li{
-        text-align: center;    
-        padding: 5px;
-        margin-top: 20px;
-      }
-      .rnavbar-links ul li a{
-        color: white;
-      }
-      .rnavbar-links ul li .r_joinus{
-        background-color: rgb(92, 185, 247);
-        color: white;
-        border-radius: 10px;
-        padding: 5px 10px;
-      }
-      .rnavbar-links ul li .r_joinus:hover{
-          background-color: orange;
-          color: white;
-          border-radius: 10px;
-          padding: 5px 10px;
-      }
-      .rnavbar-links ul li button{
-        margin-bottom: 20px;
-        margin-right: -1px;
-        padding: 5px 10px;
-      }
-      .rnavbar-links.active{
-        display: flex;
-      }
+  /* navbar */
+  .toggle-btn{
+    display: flex;
+    margin: 30px;
+  }
+  .navbar-links{
+    display: none;
+  }
+  .rnavbar-links{
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+  }
+  .rnavbar-links ul{
+    width: 100%;
+    flex-direction: column;    
+    background-color: rgba(0, 0, 0, 0.8);  
+  }
+  .rnavbar-links ul li{
+    text-align: center;    
+    padding: 5px;
+    margin-top: 20px;
+  }
+  .rnavbar-links ul li a{
+    color: white;
+  }
+  .rnavbar-links ul li button{
+    margin-bottom: 20px;
+    margin-right: -1px;
+    padding: 5px 10px;
+  }
+  .rnavbar-links.active{
+    display: flex;
+  }
     
   /* --------------------------------------------------------- */
   
@@ -123,4 +109,3 @@
         }
       }
   }
-}
