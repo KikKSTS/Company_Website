@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Euclid Triangle';
+    font-family: 'Poppins', sans-serif;
 }
 
 /* navbar */
@@ -14,9 +15,11 @@
     box-shadow: 0 1px 20px 1px rgb(224, 224, 224);
 }
 .logo img{
-    height:70px;
+    height:40px;
     width: auto;
-    margin: 15px 20px;
+    margin: 10px 0;
+    padding-top: 3px;
+    margin-left: 50px;
 }
 .navbar-links ul,
 .rnavbar-links ul{
@@ -47,155 +50,52 @@
     font-weight: bolder;
 }
 
-.navbar-links img{
-    height: 20px;
+.navbar-lang ul li,
+.rnavbar-links ul li{
+    list-style: none;
 }
-.navbar-links button,
-.rnavbar-links button{
-    padding: 10px;
-    margin-right: 10px;
+.navbar-lang button{
+    padding: 5px;
+    margin-right: 50px;
     font-size: 15px;
     font-weight: bolder;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
-    background-color: rgb(220, 216, 216);
-
+    /* background-color: rgb(220, 216, 216);     */
+    background:none;
 }
-.navbar-links button:hover,
-.rnavbar-links button:hover{
-    background-color: rgb(194, 194, 194);
+.navbar-lang button:hover{
+    /* background-color: rgb(194, 194, 194); */
+    border-bottom: 3px solid orange;
 }
 
 .toggle-btn{
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    right: 0;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 15px;
+    height: 14px;
+    color: black;
+    text-decoration: none;
 }
-.toggle-btn .bar{
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
+
 .rnavbar-links{
     display: none;
 }
-/* --------------------------------------------------------------- */
-.powerpoint{
-    background-image: url("/images/bg-homepage.png");
-    background-size: cover;
-    padding: 5% 0;
-  }
-  .home{
-    position: relative;
-    max-width: 100%;	
-    height: 55vh;
-    margin: auto;
-  }
-  .home .fade{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      z-index:1; 
-      display:none;
-      /* padding:0 15px; */
-      animation: fade 2s ease;  
-    border-radius: 80px;
-    box-shadow: 0 0 30px -10px rgb(0, 0, 0);
-  }
-  .home .fade.active{
-      display: flex;
-  }
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  /* @keyframes fade{
-      0%{
-          transform:scale(1.01);
-      }
-      100%{
-          transform: scale(1);
-      }
-  } */
-  
-.controls .prev,
-.controls .next{
-   position: absolute;
-   z-index:2;
-   top:50%;
-   height:40px;
-   width: 40px;
-   margin-top: -20px;
-   border-radius: 50%;
-   color:#ffffff;
-   background-color: #000000;
-   text-align: center;
-   line-height: 38px;
-   font-size:20px;
-   cursor:pointer;
-   opacity: 0.4;
-   transition:  all 0.5s ease;
-  }
-.controls .prev:hover,
-.controls .next:hover{
-      background-color: #000000;
-    opacity: 0.7;
-  
-  }
-.controls .prev{
-   left:-10%;
-  }
-.controls .next{
-   right:-10%;
-  }
-  
-.indicator{
-      position: absolute;
-      left:50%;
-      bottom:-8%;
-      z-index: 2;
-      transform: translateX(-50%);
-    opacity: 0.8;  
-    margin-left: 15px;
-  }
-.indicator div{
-      display: inline-block;
-      width:15px;
-      height: 15px;
-      background-color: #8ba9d2;
-    border: 3px solid white;
-      border-radius:50%;
-      text-align: center;
-      line-height: 5px;
-      margin:0 3px;
-  }
-  
-.indicator div.active{
-   background-color: #213e67;
-  }
-  
 
+
+  
 
 /* ---------------------------------------------------------------------------- */
 
 /* box 1 */
 .container1{
-    background-color: rgb(223, 223, 220);
+    display: inline-flex;
+    background-image: url('/images/box1-bg.png');
+    background-size: content;
+    height: 59vh;
+    width: 100%;
 }
 .box1{
     display: flex;
@@ -206,24 +106,20 @@
     flex-direction: column;
     justify-content: center;
     padding: 5%;
-    margin: 10% 10%;
+    margin: auto 10%;
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
-    box-shadow: 20px 30px 40px 10px gray;
+    box-shadow: 5px 6px 5px 3px rgba(83, 82, 82, 0.537);
 }
 .box1_info h1{
     word-spacing: 5px;
-    font-size: 2.3rem;
+    font-size: 35px;
 }
 .box1_info p{
-    margin-top: 50px;
-}
-.img_box1 img{
-    height: auto;
-    width: 80%;
-    padding: 10%;
-}
+    margin-top: 30px;
+    font-size: 15px;
 
+}
 /* ---------------------------------------------------------------------------- */
 
 /* box2 */

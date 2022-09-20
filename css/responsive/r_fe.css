@@ -1,45 +1,97 @@
-@media only screen and (max-width:1000px){
-
-  /* navbar */
-  .toggle-btn{
-    display: flex;
-    margin: 30px;
+@media screen and (max-width:1000px){
+  *{
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
   }
-  .navbar-links{
-    display: none;
+      /* navbar */
+      .logo img{
+        height:25px;
+        margin: 10px 25px;
+        padding-top: 5px;
+    }
+      .toggle-btn{
+        display: flex;
+        margin: 19px;
+      }
+      .navbar-links,
+      .navbar-lang{
+        display: none;
+      }
+      .rnavbar-links{
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        z-index: 100;
+      }
+      .navbar{
+        display: flex;
+        flex-direction: column;    
+        align-items: flex-start;
+      }
+      .rnavbar-links ul{
+        width: 100%;
+        flex-direction: column;    
+        background-color: rgba(0, 0, 0, 0.8);  
+      }
+      .rnavbar-links ul li{
+        text-align: center;    
+        padding: 5px;
+        margin-top: 20px;
+      }
+      .rnavbar-links ul li a{
+        color: white;
+      }
+      .rnavbar-links ul li button{
+        margin-bottom: 20px;
+        margin-right: -1px;
+        padding: 5px 10px;
+        background: none;
+        border: none;
+        font-weight: bold;
+        color: white;
+      }
+      .rnavbar-links.active{
+        display: flex;
+      }
+  
+  .rnavbar-links ul li a,
+  .rnavbar-links ul li button
+  {
+    position: relative;
+    text-decoration: none;
+    padding: 0px 2px;
   }
-  .rnavbar-links{
-    display: none;
+  .rnavbar-links ul li a:after
+  {
+    content:"";
     position: absolute;
-    top: 100px;
+    background-color: rgba(70, 70, 70, 0.777);
+    height: 1px;
     width: 100%;
-    z-index: 100;
-  }
-  .navbar{
-    display: flex;
-    flex-direction: column;    
-    align-items: flex-start;
-  }
-  .rnavbar-links ul{
-    width: 100%;
-    flex-direction: column;    
-    background-color: rgba(0, 0, 0, 0.8);  
-  }
-  .rnavbar-links ul li{
-    text-align: center;    
-    padding: 5px;
-    margin-top: 20px;
-  }
-  .rnavbar-links ul li a{
-    color: white;
+    left: 0;
+    bottom: -15px;
   }
   .rnavbar-links ul li button{
-    margin-bottom: 20px;
-    margin-right: -1px;
+    background-color: orange;
     padding: 5px 10px;
+    border-radius: 5px;
+    
   }
-  .rnavbar-links.active{
-    display: flex;
+  .dropdown_menu-6{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
   }
     
   /* --------------------------------------------------------- */

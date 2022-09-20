@@ -21,30 +21,31 @@
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo2.png" alt="YOJOIES TECHNOLOGY">
+                <img src="images/fulllogo.png" alt="YOJOIES TECHNOLOGY">
             </a>
         </div>
         <a href="#" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <i class="fa fa-bars" onclick="changeIcon(this)"></i>
         </a>
         <div class="navbar-links" id="navac">
             <ul>
-                <li><a href="index.html" class="btnac">Home Page</a></li>
+                <li><a href="index.html" class="btnac active">Home Page</a></li>
                 <li><a href="contact_us.html" class="btnac">Contact Us</a></li>
-                <li><a href="join_us.html" class="btnac active">Join Us !</a></li>
-                <li><img class="img_nav" src="images/line.png" alt="#"> </li>
+                <li><a href="join_us.html" class="btnac">Join Us !</a></li>
+            </ul>
+        </div>
+        <div class="navbar-lang" id="navac">
+            <ul>
                 <li><button id="btn" >EN</button></li>
             </ul>
         </div>
-
+        
         <!-- responsive navbar  -->
-        <div class="rnavbar-links" id="r_navac">
+        <div class="rnavbar-links dropdown_menu-6" id="r_navac">
             <ul>
-                <li><a href="index.html" class="r_btnac">Home Page</a></li>
+                <li><a href="index.html" class="r_btnac active">Home Page</a></li>
                 <li><a href="contact_us.html" class="r_btnac">Contact Us</a></li>
-                <li><a href="join_us.html" class="r_btnac active">Join Us !</a></li>
+                <li><a href="join_us.html" class="r_btnac">Join Us !</a></li>
                 <li><button id="btns" >EN</button></li>
             </ul>
         </div>

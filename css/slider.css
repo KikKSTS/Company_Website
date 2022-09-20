@@ -1,0 +1,152 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main{
+  margin-bottom: -10px;
+}
+.wrapper,
+.slide {  
+  margin: auto;
+  position: relative;
+  max-width: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+/* .slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  opacity: 0.2;
+} */
+/* .slide .image {
+  height: 100%;
+  width: 100%;
+} */
+/* .slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+} */
+
+/* swiper button css */
+.nav-btn {
+  margin-left: -18px;
+  margin-right: -18px;
+  margin-top: -70px;
+  height: 150px;
+  width: 50px;
+  border-radius: 10px;
+  background: rgba(57, 57, 57, 0.4);
+  opacity: 0.;
+}
+.nav-btn:hover {
+  background: rgba(9, 9, 9, 0.453);
+  opacity: 1;
+}
+/* .swiper-button-next {
+  right: 50px;  
+} */
+/* .swiper-button-prev {
+  left: 50px;
+} */
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 20px;
+  color: #fff;
+  
+}
+.swiper-pagination {
+ margin-bottom: 10px;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 8px;
+  width: 8px;
+  background-color: transparent;
+  visibility: visible;
+  border: 1px solid rgb(255, 255, 255);
+}
+.swiper-pagination-bullet-active {  
+  border-radius: 50px;
+  border: none;
+  height: 9px;
+  width: 18px;
+  background-color: rgb(255, 132, 0);  
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .slide .image {
+    height: 100%;
+    width: 100%;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* frame */
+    margin-top: -15px; 
+    margin-bottom: -3px; 
+    /*pagnition*/
+    padding-top: 10px;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 5px;
+  width: 5px;
+  background-color: transparent;
+  visibility: visible;
+  border: 1px solid rgb(255, 255, 255);
+}
+.swiper-pagination-bullet-active {  
+  border-radius: 50px;
+  border: none;
+  height: 6px;
+  width: 15px;
+  background-color: rgb(255, 132, 0);  
+}
+
+}

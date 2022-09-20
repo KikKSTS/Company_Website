@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yojoies Technology</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <!-- link -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive/r_index.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive/r_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -20,26 +24,27 @@
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo2.png" alt="YOJOIES TECHNOLOGY">
+                <img src="images/fulllogo.png" alt="YOJOIES TECHNOLOGY">
             </a>
         </div>
         <a href="#" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <i class="fa fa-bars" onclick="changeIcon(this)"></i>
         </a>
         <div class="navbar-links" id="navac">
             <ul>
                 <li><a href="index.html" class="btnac active">Home Page</a></li>
                 <li><a href="contact_us.html" class="btnac">Contact Us</a></li>
                 <li><a href="join_us.html" class="btnac">Join Us !</a></li>
-                <li><img class="img_nav" src="images/line.png" alt="#"> </li>
+            </ul>
+        </div>
+        <div class="navbar-lang" id="navac">
+            <ul>
                 <li><button id="btn" >EN</button></li>
             </ul>
         </div>
         
         <!-- responsive navbar  -->
-        <div class="rnavbar-links" id="r_navac">
+        <div class="rnavbar-links dropdown_menu-6" id="r_navac">
             <ul>
                 <li><a href="index.html" class="r_btnac active">Home Page</a></li>
                 <li><a href="contact_us.html" class="r_btnac">Contact Us</a></li>
@@ -51,29 +56,52 @@
 
 <!-- ----------------------------------------------------------------------- -->
     
-<!-- slider -->
-<div class="powerpoint">
-    <section class="home">
-        <div class="slider">
-            <div class="fade active" style="background-image: url('images/slide/img1.png')">
-            </div>
-            <div class="fade" style="background-image: url('images/slide/img2.png')">
-            </div>
-            <div class="fade" style="background-image: url('images/slide/img3.png')">
-            </div>
+     <!-- slider -->
+     <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+  
+          <div class="slide swiper-slide">
+            <img src="images/slide/img1.png" alt="" class="image" />
+            <!-- <div class="image-data">
+              <span class="text">Enjoy the finest coffee drinks.</span>
+              <h2>
+                Enjoy Our Exclusive <br />
+                Coffee and Cocktails
+              </h2>
+              <a href="#" class="button">About Us</a>
+            </div> -->
+          </div>
+  
+          <div class="slide swiper-slide">
+            <img src="images/slide/img2.png" alt="" class="image" />
+            <!-- <div class="image-data">
+              <span class="text">We really like what we do.</span>
+              <h2>
+                Coffee Beans with a <br />
+                Perfect Aroma
+              </h2>
+              <a href="#" class="button">About Us</a>
+            </div> -->
+          </div>
+  
+          <div class="slide swiper-slide">
+            <img src="images/slide/img3.png" alt="" class="image" />
+            <!-- <div class="image-data">
+              <span class="text">Making Our coffee with lover.</span>
+              <h2>
+                Alluring and Fragrant <br />
+                Coffee Aroma
+              </h2>
+              <a href="#" class="button">About Us</a>
+            </div> -->
+          </div>
+          
         </div>
-            <!-- controls  -->
-            <div class="controls">
-                <div class="prev"><</div>
-                <div class="next">></div>
-            </div>
-
-            <!-- indicators -->
-            <div class="indicator">
-            </div>
-        
-    </section>
-</div>  
+  
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
 
 <!-- ----------------------------------------------------------------------- -->
 
@@ -87,9 +115,6 @@
                         <br>Eaque dignissimos sequi expedita maiores harum corporis quis aut accusamus quam eum nam amet autem natus,
                         <br> temporibus, voluptates nulla vel reiciendis eos.
                     </p>
-                </div>
-                <div class="img_box1">
-                    <img src="images/photo_2022-09-14_16-47-00.jpg" alt="#">
                 </div>
             </div>
         </div>
@@ -126,7 +151,7 @@
                 <td>
                     <div class="footer-widget">
                         <div class="footer-logo">
-                                <a href="index.html"><img src="images/logo2.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="images/fulllogo.png" class="img-fluid" alt="logo"></a>
                         </div>
                     </div>
                 </td>
@@ -148,11 +173,12 @@
                     <div class="footer-widget">
                         <div class="footer-social-icon">
                             <span>Follow us</span>
+                            <div class="icn">
                             <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                             <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                             <a href="#"><i class="fab fa-line line-bg"></i></a>
                         </div>
-
+</div>
                     </div> 
                 </td>
             </tr>
@@ -161,7 +187,7 @@
         <div class="copyright-area">
             <div class="row3">
                 <div class="copyright-text">
-                    <p>Copyright &copy; 2022.&nbsp;<a href="https://codepen.io/anupkumar92/">YOJOIES</a></p>
+                    <p>Copyright &copy; 2022.&nbsp;<a href="https://codepen.io/anupkumar92/">YOJOIES TECHNOLOGY</a></p>
                 </div>
             </div>
         </div>
@@ -169,6 +195,9 @@
 </section>
 
 <!-- ----------------------------------------------------------------------------- -->
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- script  -->
     <script src="js/navbar.js"></script>

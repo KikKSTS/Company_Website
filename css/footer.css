@@ -15,18 +15,13 @@ ul {
   justify-content: space-between;
   margin:0 5%;
   }
-  .footer-logo {
-  margin-bottom: 30px;
+ .footer-logo {
+   margin-bottom: 30px;
   }
   .footer-logo img {
     max-width: 200px;
   }
-  .footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: #7e7e7e;
-  line-height: 28px;
-  }
+
   .footer-social-icon span {
   color: rgb(0, 0, 0);
   display: block;
@@ -61,8 +56,7 @@ ul {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 30px 0px;
   position: relative;
   }
   .footer-widget-heading h3::before {
@@ -70,12 +64,12 @@ ul {
   position: absolute;
   bottom: -15px;
   height: 2px;
-  width: 50px;
+  width: 20%;
   background: #ff5e14;
   }
   .footer-widget ul{
     margin-top: 30px;
-    }
+  }
   .footer-widget ul li {
   display: inline-block;
   float: left;
@@ -90,36 +84,13 @@ ul {
   text-transform: capitalize;  
   text-decoration: none;
   margin-top: 10px;
+  font-size: 15px;
   }
-  .subscribe-form {
-  position: relative;
-  overflow: hidden;
-  }
-  .subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-  }
-  .subscribe-form button {
-    position: absolute;
-    right: 0px;
-    background: #ff5e14;
-    padding: 15px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
-    cursor: pointer;
-  }
-  .subscribe-form button i {
-  color: #fff;
-  font-size: 20px;
-  transform: rotate(-6deg);
-  }
+
   .copyright-area{
   background: #202020;
-  padding: 25px 0;
-  font-size: 14px;
+  padding: 15px 0;
+  font-size: 10px;
   color: #878787;
   display: flex;
   flex-direction: column;
@@ -135,9 +106,6 @@ ul {
   margin-right: 50px;
 }
 
-.footer-widget-heading h3, .footer-text, .subscribe-form{
-margin-bottom:20px;
-}
 .footer-logo{
   margin-top: 20px;
 }

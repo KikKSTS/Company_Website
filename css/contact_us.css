@@ -1,102 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Euclid Triangle';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
 /* navbar */
 .navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 1px 20px 1px rgb(224, 224, 224);
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 20px 1px rgb(224, 224, 224);
 }
 .logo img{
-  height:70px;
-  width: auto;
-  margin: 15px 20px;
+    height:40px;
+    width: auto;
+    margin: 10px 0;
+    padding-top: 3px;
+    margin-left: 50px;
 }
 .navbar-links ul,
 .rnavbar-links ul{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 .navbar-links ul li,
 .rnavbar-links ul li{
-  list-style: none    
+    list-style: none    
 
 }
 .navbar-links ul li a,
 .rnavbar-links ul li a{
-  text-decoration: none;
-  color: black;
-  padding: 1rem;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
 }
 .navbar-links ul li a:hover,
 .rnavbar-links ul li a:hover{
-  color:orange;
-  font-weight: bolder;
+    color:orange;
+    font-weight: bolder;
 }
 .navbar-links ul li a.active,
 .rnavbar-links ul li a.active{
-  color:orange;
-  font-weight: bolder;
+    color:orange;
+    font-weight: bolder;
 }
-.navbar-links ul li .joinus{
-  background-color: rgb(92, 185, 247);
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-}
-.navbar-links ul li .joinus:hover{
-  background-color: orange;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-}
-.navbar-links img{
-  height: 20px;
-}
-.navbar-links button,
-.rnavbar-links button{
-  padding: 10px;
-  margin-right: 10px;
-  font-size: 15px;
-  font-weight: bolder;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgb(220, 216, 216);
 
+.navbar-lang ul li,
+.rnavbar-links ul li{
+    list-style: none;
 }
-.navbar-links button:hover,
-.rnavbar-links button:hover{
-  background-color: rgb(194, 194, 194);
+.navbar-lang button{
+    padding: 5px;
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    /* background-color: rgb(220, 216, 216);     */
+    background:none;
+}
+.navbar-lang button:hover{
+    /* background-color: rgb(194, 194, 194); */
+    border-bottom: 3px solid orange;
 }
 
 .toggle-btn{
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 15px;
+    height: 14px;
+    color: black;
+    text-decoration: none;
 }
-.toggle-btn .bar{
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  border-radius: 10px;
-}
+
 .rnavbar-links{
-  display: none;
+    display: none;
 }
+
+
+  
 /* ------------------------------------------------------------ */
 
 /* section 2 */

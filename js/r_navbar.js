@@ -18,3 +18,10 @@ for (var i = 0; i < rbtnac.length; i++) {
   this.className += " active";
   });
 }
+
+//change active button menu
+let changeIcon = function(icon){
+  icon.classList.toggle('fa-times')
+}
+
+changeIcon = (icon) => icon.classList.toggle('fa-times')
