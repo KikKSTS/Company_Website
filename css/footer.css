@@ -73,7 +73,7 @@ ul {
   .footer-widget ul li {
   display: inline-block;
   float: left;
-  width: 50%;
+  width: 100%;
   margin-bottom: 20px;
   }
   .footer-widget ul li a:hover{

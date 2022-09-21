@@ -43,5 +43,3 @@ for (var i = 0; i < btnac.length; i++) {
 
 
 
-
-

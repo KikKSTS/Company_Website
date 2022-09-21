@@ -18,9 +18,12 @@
     height:40px;
     width: auto;
     margin: 10px 0;
-    padding-top: 3px;
+    padding-top: 5px;
     margin-left: 50px;
 }
+.navbar-links{
+    margin-left: -100px;
+  }
 .navbar-links ul,
 .rnavbar-links ul{
     display: flex;
@@ -120,10 +123,74 @@
     font-size: 15px;
 
 }
+
+/* .fadeInLeft{
+    -webkit-animation: fadeInLeft 1.5s both;
+    -moz-animation: fadeInLeft 1.5s both;
+    -o-animation: fadeInLeft 1.5s both;
+    animation: fadeInLeft 1.5s both;
+}
+
+@-webkit-keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft{    0%{
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+}
+100%{
+    opacity: 1;
+    -moz-transform: translateX(0);
+}}
+@-o-keyframes fadeInLeft{    0%{
+    opacity: 0;
+    -o-transform: translateX(-50px);
+}
+100%{
+    opacity: 1;
+    -o-transform: translateX(0);
+}}
+@keyframes fadeInLeft{    0%{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+100%{
+    opacity: 1;
+    transform: translateX(0);
+}} */
+
+.fadeLeft{
+    position: relative;
+    transform: translatex(-100px);
+    opacity: 0;
+    transition: all 1.5s ease;
+  }
+  
+  .fadeLeft.active{
+    transform: translatex(0px);
+    opacity: 1;
+  }
 /* ---------------------------------------------------------------------------- */
 
 /* box2 */
-
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1.5s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
 
 .box2{
     display: flex;
@@ -132,11 +199,11 @@
 }
 .box2_info1,
 .box2_info2{
-    background-color:rgb(196, 232, 255) ;
+    background-color:rgb(239, 249, 255) ;
     margin:5%;
     padding: 100px 50px;
     border-radius: 50px;
-    box-shadow: 0 6px 20px 1px rgb(153, 203, 236);
+    box-shadow: 5px 6px 5px 3px rgba(83, 82, 82, 0.537);
 }
 .box2_info1 h1,
 .box2_info2 h1{

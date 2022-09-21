@@ -18,8 +18,11 @@
     height:40px;
     width: auto;
     margin: 10px 0;
-    padding-top: 3px;
+    padding-top: 5px;
     margin-left: 50px;
+}
+.navbar-links{
+  margin-left: -100px;
 }
 .navbar-links ul,
 .rnavbar-links ul{

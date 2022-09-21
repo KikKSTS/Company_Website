@@ -18,8 +18,11 @@
     height:40px;
     width: auto;
     margin: 10px 0;
-    padding-top: 3px;
+    padding-top: 5px;
     margin-left: 50px;
+}
+.navbar-links{
+  margin-left: -100px;
 }
 .navbar-links ul,
 .rnavbar-links ul{
@@ -154,12 +157,14 @@ body{
   display: flex;
   align-items: center;
   border-bottom: 2px solid rgb(118, 118, 117);
-  background-color: rgb(216, 213, 213);
+  background-color: rgb(216, 213, 213);  
+  transition-duration: 500ms;
+
 }
 .list:hover{
-
   border-left: 12px solid rgb(244, 136, 28);
   background-color: rgb(188, 186, 186);
+  transform: scaleX();
 }
 .list a{
   display: flex;
