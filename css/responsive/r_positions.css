@@ -1,6 +1,4 @@
 @media screen and (max-width:1000px){
-
-  @media screen and (max-width:1000px){
     *{
       -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
     }
@@ -95,52 +93,75 @@
           transform: scaleY(1)
       }
     }
-        /* --------------------------------------------------------- */
-
-    /* section 3 */
-    
-    .box1{
-      margin: 10%;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    
-    .text1{
-      text-align: center;
-    } 
-      
+ 
     /* --------------------------------------------------------- */
-        
+    .list{
+      height: 150px;
+      padding: 0;
+      margin: 0;
+}
+.list a{
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
 .wrap{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  width: 100%;
 }
-.wrap p{
+.wrap h1{
   margin-bottom: 20px;
+  font-size: 1.2rem;
 }
   .search {
     width: 70%;
     position: relative;
     display: flex;  
   }
+  .searchTerm {
+    border: 2px solid #fc9048;
+    padding: 3px;
+    height: 30px;
+  }
+  .searchButton {
+    height: 30px;
+    font-size: 15px;
+  }
+  
 
 .table{
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
+.list:hover{
+  border-left:none;
+  transform: none;
+}
 .info1{
   display: flex;
   flex-direction: column;
-}
-.info1 h1{
-  font-size: 1.5rem;
+  align-items: center;
+  padding: 0 auto;
+  }
+
+.info1 h5{
+  font-size: 1.1rem;
 }
 .info1 p{
   margin-top: 10px;
+  font-size: 0.8rem;
+}
+.info2{
+  margin-top: 10px;
+}
+.info2 p{
+  font-size: 0.6rem;
+}
+.info2 img{
+  height: 15px;
 }
 .icons img{
   display: none;
@@ -197,4 +218,4 @@
   }
 
   
-}}
+}

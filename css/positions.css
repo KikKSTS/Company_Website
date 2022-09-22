@@ -100,20 +100,22 @@ body{
   margin-top: 30px;
 }
 .wrap{  
-  margin: 0 300px;
-  width: 100%;
+  margin: 0 auto;
+  width: 60%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
-.wrap p{  
+.wrap h1{  
   font-size: 2rem;
+  font-weight: 600px;
+
 }
 .search {
   width: 30%;
   position: relative;
-  display: flex;  
+  display: flex;
 }
 .searchTerm {
   width: 100%;
@@ -123,7 +125,7 @@ body{
   height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
+  color: #000000;
 }
 
 .searchTerm:focus{
@@ -179,8 +181,9 @@ body{
   align-items: center;
   padding:15px 10px;
 }
-.info1 p{
+.info1 h5{
   margin-top: 10px;
+  font-size: 1.5rem;
 }
 .info2{
   display: flex;  
