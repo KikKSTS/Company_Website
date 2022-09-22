@@ -29,7 +29,7 @@ btns.addEventListener('click', function handleClick() {
 
 //active button menu
 // Add active class to the current button (highlight it)
-var header = document.getElementById("navac");
+// var header = document.getElementById("navac");
 var btnac = header.getElementsByClassName("btnac");
 for (var i = 0; i < btnac.length; i++) {
   btnac[i].addEventListener("click", function() {
