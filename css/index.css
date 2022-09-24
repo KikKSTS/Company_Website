@@ -96,8 +96,8 @@
 .container1{
     display: inline-flex;
     background-image: url('/images/box1-bg.png');
-    background-size: content;
-    height: 59vh;
+    background-size: contain;
+    height: 57vh;
     width: 100%;
 }
 .box1{

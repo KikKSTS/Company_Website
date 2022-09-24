@@ -12,9 +12,9 @@
 }
 .wrapper,
 .slide {  
-  margin: auto;
+  margin: auto 0;
   position: relative;
-  max-width: 100%;
+  width: 100%;
 }
 .slide {
   overflow: hidden;
@@ -28,10 +28,10 @@
   z-index: 10;
   opacity: 0.2;
 } */
-/* .slide .image {
-  height: 100%;
+.slide .image {
+  height: 600px;
   width: 100%;
-} */
+}
 /* .slide .image-data {
   position: absolute;
   top: 50%;
