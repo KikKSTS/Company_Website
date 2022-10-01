@@ -180,6 +180,9 @@
 /* ---------------------------------------------------------------------------- */
 
 /* box2 */
+.container2{
+    background-image: linear-gradient(to right, orange, rgb(130, 130, 253));
+}
 .reveal{
     position: relative;
     transform: translateY(100px);
